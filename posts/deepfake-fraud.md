@@ -66,7 +66,7 @@ You need to be wary by ensuring that all calls / meetings are from trusted sourc
 Look for glitches, graphical artifacts, or strange abberations in the video stream. If you're unsure, reach out to the party using a known communication method like iMessage, Signal, Whatsapp, or a corporate communication tool like Teams or Slack.
 If you have any doubt whatsoever, it's simply not worth avoiding the embarrassment and someday the other party will start to appreciate it as well. 
 
-This goes without saying, but if you can't trust live video as much any longer, any prerecorded video is just as likely to be as fake as the latest Avenger's scene. Ask questions, be critical. 
+This goes without saying, but if you can't trust live video then any prerecorded video is just as likely to be as fake as the latest Avenger's scene. If a number that appears to be your boss' number sends you a video asking for credentials or your password, think twice. Ask questions, be critical. 
 
 The final trick is to stop giving too much of your info away. For some of us that's simply not possible, but if you have an already low profile and you get a call from an unknown number, simply wait to say "hello".
 They may be trying to harvest your voice, and as little as a sentence could enable them to build a model to target your grandma or boss. If the caller is legit, they will be eager to start the conversation. If you don't hear anything, hang up and block the number.
