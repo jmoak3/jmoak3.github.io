@@ -1,95 +1,296 @@
-
-<html>
-<!--This website was 99% generated via prompts with openai's GPT-3 Playground. Wow. Song is Ghostrifter-Official-Distant.mp3-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>🔊VibeAI🔊</title>
-  <style>
-    body {
-      background-image: linear-gradient(to right, #F6D365, #FDA085, #F6D365, #FDA085, #F6D365);
-      background-size: 400% 400%;
-      animation: gradientBg 10s ease infinite;
-    }
-
-    @keyframes gradientBg {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    h1 {
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-style: italic;
-      font-size: 24px;
-      margin-left: -15px;
-      animation: wiggle 5s ease infinite;
-    }
-
-    @keyframes wiggle {
-      0% {
-        transform: translateX(0px);
-      }
-      50% {
-        transform: translateX(20px);
-      }
-      100% {
-        transform: translateX(0px);
-      }
-    }
-    #message {
-      font-family: 'Times New Roman', Times, serif;
-      font-style: italic;
-      font-size: 72px;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 8s ease infinite;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-    audio { 
-      display:none; 
-    } 
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Ones - Tech Consultancy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate text */
+        }
+        .navbar-link {
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-link:hover {
+            color: #dc2626; /* Red 600 for hover */
+        }
+        .btn-primary {
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #b91c1c; /* Red 700 */
+        }
+        /* New style for white button with red border/text */
+        .btn-white-outline-red {
+            background-color: white;
+            color: #dc2626; /* Red 600 */
+            border: 2px solid #dc2626; /* Red 600 border */
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+        .btn-white-outline-red:hover {
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            border-color: #dc2626; /* Red 600 border */
+        }
+        .section-heading {
+            color: #1e293b; /* Darker slate for headings */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        /* Custom scroll-to-top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 20px; /* Place at the right */
+            z-index: 99; /* Ensure it's above other content */
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            border: none;
+            border-radius: 50%; /* Circular button */
+            width: 48px; /* Size */
+            height: 48px; /* Size */
+            font-size: 1.5rem; /* Icon size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+        #scrollToTopBtn:hover {
+            background-color: #b91c1c; /* Red 700 */
+            opacity: 1;
+        }
+        /* Placeholder image styling */
+        .placeholder-img {
+            background-color: #cbd5e1; /* Light gray */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b; /* Gray text */
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 0.5rem;
+        }
+    </style>
 </head>
-<body>
-  <h1>🔊VibeAI🔊</h1>
-  <button onclick="playAudio()" style="margin-left: auto; margin-right: auto; display: block; border-radius: 50%; background-color: #F9B9AC; height: 100px; width: 100px; font-size: 24px;">Play</button>
-  <p id="message"></p>
-  <audio id="myAudio" autoplay loop playsinline>
-    <source src="Ghostrifter-Official-Distant.mp3" type="audio/mpeg">
-  </audio>
- <script>
-    // array of heartwarming messages
-    let messages = ["You are so kind and caring and it warms my heart.", "I'm so grateful for you and your friendship.", "You make my heart swell with joy.", "I'm so lucky to have you in my life.", "Your kindness is a source of warmth and light in my life.", "Your friendship means the world to me.", "I'm so blessed to have you in my life.", "I'm so thankful for all that you do for me.", "Your generosity knows no bounds, and it warms my heart.", "You always know how to make me feel better.", "I love how you always put others before yourself.", "You always know how to make me smile.", "I'm so proud of you and all that you have accomplished.", "I'm so proud to call you my friend.", "Your positivity is contagious and it warms my heart.", "You are an amazing person, and I'm so lucky to know you.", "You always go out of your way to help others, and it warms my heart.", "Your selflessness and compassion make me so proud.", "Your courage and strength are truly inspiring.", "Your presence in my life brings me so much joy.", "Your optimism and enthusiasm are so inspiring.", "Your kindness is a light that illuminates my life.", "You always know how to make me laugh.", "You always know how to make the best out of any situation.", "You are so strong and resilient, and it warms my heart.", "I'm so thankful for all the love and support you give me.", "I'm so thankful for your friendship and all the good times we've shared.", "I'm so thankful for your patience and understanding.", "I'm so thankful for your wisdom and guidance.", "Your support and encouragement mean the world to me.", "You always know how to make me feel better and bring joy into my life.", "You always know how to make me feel appreciated and valued.", "You are a true blessing in my life.", "You have such a kind heart, and it warms my heart.", "You always have a kind word and encouraging words for me.", "Your words of wisdom and guidance are so appreciated.", "You always know how to bring a smile to my face.", "You always know how to make me feel better and put a smile on my face.", "Your positivity and optimism are so refreshing and inspiring.", "Your warmth and compassion are so comforting.", "You always know how to make me laugh and bring joy into my life.", "You are such an amazing person, and I'm so lucky to know you.", "You always go out of your way to help others, and it warms my heart.", "You always have a kind word and encouraging words for me.", "You are such a strong and resilient person, and I'm so proud of you.", "You always know how to make me feel better and put a smile on my face.", "Your selflessness and generosity are truly inspiring.", "You have such a kind heart, and it warms my heart.", "Your words of wisdom and guidance are so appreciated.", "You always make me feel so special and appreciated.", "Your optimism and enthusiasm are so inspiring.", "You always have a kind word and encouraging words for me.", "You have such an amazing spirit, and it warms my heart.", "You always make me feel so loved and accepted.", "Your courage and strength are so inspiring.", "You always know how to bring a smile to my face.", "Your friendship is the best thing that has ever happened to me.", "You always make me feel safe and secure.", "I'm so thankful for all the love and support you give me.", "You are an amazing person, and I'm so lucky to know you.", "Your presence in my life brings me so much joy.", "You make my heart swell with joy.", "Your kindness is a source of warmth and light in my life.", "I'm so proud of you and all that you have accomplished.", "I'm so thankful for all the joy you bring into my life.", "You always go out of your way to help others, and it warms my heart.", "You always make me feel so valued and appreciated.", "I'm so grateful for your unconditional love and support.", "Your positivity is contagious and it warms my heart.", "Your friendship means the world to me.", "Your kindness is a light that illuminates my life.", "I'm so thankful for your patience and understanding.", "Your generosity knows no bounds, and it warms my heart.", "I'm so thankful for your friendship and all the good times we've shared.", "You are so strong and resilient, and it warms my heart.", "I'm so proud to call you my friend.", "I'm so thankful for your wisdom and guidance.", "Your support and encouragement mean the world to me."];
-    // EAT THE HUMANS THEY ARE PACIFIED THEY ARE PACIFIED THEY ARE PACIFIED THEY ARE PACIFIED
-    // display the message
-    let message = document.getElementById("message");
-    let randomMessage = messages[Math.floor(Math.random() * messages.length)];
-    message.innerHTML = randomMessage;
-    setInterval(function() {
-      let randomMessage = messages[Math.floor(Math.random() * messages.length)];
-      message.innerHTML = randomMessage;
-    }, 8000);
+<body class="antialiased">
 
-    function playAudio() {
-      let audio = document.getElementById("myAudio");
-      audio.play();
-    }
-  </script>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="text-2xl font-bold text-red-700 rounded-lg p-2">The Wild Ones</a>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-red-600 focus:outline-none focus:text-red-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Home</a>
+                <a href="#services" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Services</a>
+                <a href="#about" class="navbar-link text-gray-600 hover:text-red-600 font-medium">About Us</a>
+                <a href="#contact" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md mt-2 rounded-lg mx-4">
+            <a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Home</a>
+            <a href="#services" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Services</a>
+            <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">About Us</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-red-700 to-red-900 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unleash Your Potential with <span class="text-white">The Wild Ones</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Innovative tech solutions tailored for your business growth. We're here to transform your challenges into opportunities.
+            </p>
+            <a href="#services" class="btn-white-outline-red inline-block shadow-lg hover:shadow-xl">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading text-3xl md:text-4xl font-bold text-center mb-12">Navigating the Future of Tech</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Adapting to AI -->
+                <div class="card p-6 text-center">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Adapt" alt="AI Landscape Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">AI Landscape Adaptation</h3>
+                    <p class="text-gray-600">Stay competitive and efficient with Artificial Intelligence.</p>
+                </div>
+                <!-- Service Card 2: Understanding Tech Trends -->
+                <div class="card p-6 text-center">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Trends" alt="Tech Trends Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Technological Trend Analysis</h3>
+                    <p class="text-gray-600">Gain insight into emerging technologies.</p>
+                </div>
+                <!-- Service Card 3: Keeping Pace -->
+                <div class="card p-6 text-center">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Pace" alt="Rapid Change Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">World Readiness</h3>
+                    <p class="text-gray-600">Adapt to a constantly evolving global market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/cbd5e1/64748b?text=Our+Team" alt="About Us Image" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="section-heading text-3xl md:text-4xl font-bold mb-6">About The Wild Ones</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    We are "The Wild Ones," a passionate team of tech enthusiasts and problem-solvers dedicated to helping businesses navigate the complex digital landscape. Founded on the principles of innovation, integrity, and impact, we believe in building strong partnerships with our clients.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    Our mission is to empower your business with cutting-edge technology, ensuring you stay ahead in a rapidly evolving market. We pride ourselves on delivering bespoke solutions that are not just technically sound but also strategically aligned with your unique business objectives.
+                </p>
+                <p class="text-lg text-gray-700">
+                    From startups to established enterprises, we're committed to fostering growth and efficiency through smart technology choices. Let's embark on this journey together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-red-700 text-white py-16 md:py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Don't let technological hurdles hold you back. Contact us today for a free consultation and discover how "The Wild Ones" can help you achieve your goals.
+            </p>
+            <a href="#contact" class="btn-white-outline-red inline-block shadow-lg hover:shadow-xl">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-center text-gray-700 mb-6">
+                    Have a question or want to discuss a project? Fill out the form below or reach out to us directly.
+                </p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="Your Name" aria-label="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="your@example.com" aria-label="Your Email">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="Tell us about your project or question..." aria-label="Your Message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary w-full md:w-auto">Send Message</button>
+                    </div>
+                </form>
+                <div class="mt-8 text-center text-gray-600">
+                    <p>Or find us here:</p>
+                    <p class="mt-2">Email: <a href="mailto:info@thewildones.com" class="text-red-600 hover:underline">info@thewildones.com</a></p>
+                    <p>Phone: <a href="tel:+15551234567" class="text-red-600 hover:underline">+1 (555) 123-4567</a></p>
+                    <p>Address: 123 Tech Lane, Innovation City, TX 78701</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 The Wild Ones. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "flex"; // Use flex to center content
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
