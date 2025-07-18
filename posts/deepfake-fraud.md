@@ -17,9 +17,12 @@ Her heart sank.
 "I'm calling you from a holding cell out west -
 I need you to wire $20,000 to this account for bail, this is my only call. Do you have a pen?"
 
-While I was blissfully up to no good at 22 living in Portland, Oregon and working for Jaguar Land Rover, I can
-promise you I was never arrested for marijuana possession. My grandmother, heart of gold, rushed to the nearby PNC branch and fought with the clerk to send $20,000 before
-she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about this newfound hobby and enprisonment. 
+Hopefully this is something no family has to go through, but there was one issue: I wasn't in jail, and I didn't make that call.
+
+While I was blissfully up to no good at 22 living in Portland, Oregon while working for Jaguar Land Rover, I can
+promise you I was never arrested for marijuana possession. My grandmother however, heart of gold, didn't know any of this and rushed to the nearby PNC branch and fought with the clerk to send $20,000.
+
+Thankfully she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about this newfound hobby and enprisonment. 
 While she was relieved I wasn't in any prison of any sort, she panickly hung up and called my grandmother to talk her down from sending the money. She put up a fight but gave in. 
 She didn't lose the money, but she did lose some of her pride.
 
