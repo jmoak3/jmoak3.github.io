@@ -63,7 +63,7 @@ I highly recommend every family discuss ahead of time a secret word, and ensure 
 When it comes to deepfake calls, if you are a public figure you should absolutely be wary of being targeted in such an attack. 
 If you hold credentials at a software company that attackers want to steal customer data from, if you are a business leader, a politician, or even a high worth individual, the incentive and capability exist to target you in this manner.
 You need to be wary by ensuring that all calls / meetings are from trusted sources, and when in doubt, ask the person on other end of the line to stand up or turn their head side to side.
-Look for glitches, graphical artifacts, or strange abberations in the video stream. If you're unsure, reach out the party using a known communication method like iMessage, Signal, Whatsapp, or a corporate communication tool like Teams or Slack.
+Look for glitches, graphical artifacts, or strange abberations in the video stream. If you're unsure, reach out to the party using a known communication method like iMessage, Signal, Whatsapp, or a corporate communication tool like Teams or Slack.
 If you have any doubt whatsoever, it's simply not worth avoiding the embarrassment and someday the other party will start to appreciate it as well. 
 
 This goes without saying, but if you can't trust live video as much any longer, any prerecorded video is just as likely to be as fake as the latest Avenger's scene. Ask questions, be critical. 
