@@ -35,7 +35,7 @@ Except it isn't - as the poster says, nothing in that was real. It was entirely 
 Imagine receiving video of your loved one from a prison cell for marijuana possession, or your boss telling you to send over a password - it may be fake.
 
 What about voice you may say? [Voice is even easier to duplicate](https://www.youtube.com/watch?v=As4nS5aOVnw), as this modern example of my grandmother's story shows. 
-Attackers can clone a target's voice via loose recordings or spam calls to fish for as little as one sentence, and then create a hyper realistic copy of that voice to impersonate anyone.
+Attackers can clone a target's voice via loose recordings or spam calls to fish for as little as one sentence, and then create a hyper realistic copy of that voice to impersonate the source.
 
 Even [Salesforce has steps to identify and mitigate](https://indeedinc.my.site.com/employerSupport1/s/article/How-to-spot-a-deepfake-during-a-video-interview?language=en_US) such "deepfake" calls
 in interviews now. Famously, there is widespread evidence of [North Koreans impersonating American tech workers](https://www.politico.com/news/2025/05/12/north-korea-remote-workers-us-tech-companies-00340208) to bring money into the Hermit Kingdom.
