@@ -194,9 +194,10 @@
     <!-- About Us Section -->
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2 flex justify-center md:justify-start">
-                <!-- Updated src to face.png and added w-1/2, mx-auto, md:mx-0 -->
-                <img src="face.png" alt="James Moak - The Wild Ones" class="rounded-xl shadow-lg w-full md:w-1/2 h-auto object-cover mx-auto md:mx-0">
+            <div class="md:w-1/2">
+                <!-- Removed flex justify-center md:justify-start from parent div -->
+                <!-- Image now takes full width of its column, ensuring alignment with text -->
+                <img src="face.png" alt="James Moak - The Wild Ones" class="rounded-xl shadow-lg w-full h-auto object-cover">
             </div>
             <div class="md:w-1/2">
                 <h2 class="section-heading text-3xl md:text-4xl font-bold mb-6">About James Moak & The Wild Ones</h2>
@@ -300,7 +301,7 @@
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 scrollToTopBtn.style.display = "flex"; // Use flex to center content
             } else {
-                scrollToTopBtn.style.display = "none";
+                scrollToTo pBtn.style.display = "none";
             }
         }
 
