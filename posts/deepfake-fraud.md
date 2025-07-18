@@ -19,7 +19,7 @@ She didn't lose the money, but she did lose some of her pride.
 
 She had been scammed. They didn't copy my voice, they didn't have much identifying information... they took a shot in the dark and hit their target.
 
-With over 20% of Americans projected to be over the age of 65 by 2030, the rise of remote work, and a rapidly changing media landscape your family, and your business have never dealt with threats like this before. 
+With over 20% of Americans projected to be over the age of 65 by 2030, the rise of remote work, and a rapidly changing media landscape, your family and your business have never dealt with threats like this before. 
 In order to protect what's yours (and avoid embarrassing calls from PNC branches), you'll need to be aware of the current threat landscape and what you can do to protect yourself against these attacks.
 
 ## Threats
