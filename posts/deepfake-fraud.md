@@ -2,7 +2,7 @@ It was 2016 and the world was still reeling from Harambe's passing and Brexit. M
 when her phone began to ring.
 
 Excited, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
-Still, it may be important she thought. She answered the phone. 
+"Still, it may be important." she thought. She answered the phone. 
 
 "Grandma? Are you there?" I said. "It's me, James, and I'm in trouble."
 
