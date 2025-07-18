@@ -1,7 +1,7 @@
 It was 2016 and the world was still reeling from Harambe's passing and Brexit. My grandmother was relaxing in her patio home watching the talking heads debate the merits of these developments,
 when her phone began to ring.
 
-Ever eager for a break in the monotony, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
+Excited, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
 Still, it may be important she thought. She answered the phone. 
 
 "Grandma? Are you there?" I said. "It's me, James, and I'm in trouble."
