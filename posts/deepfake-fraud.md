@@ -23,7 +23,7 @@ While I was blissfully up to no good at 22 living in Portland, Oregon while work
 promise you I was never arrested for marijuana possession. My grandmother however, heart of gold, didn't know any of this and rushed to the nearby PNC branch and fought with the clerk to send $20,000.
 
 Thankfully she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about this newfound hobby and enprisonment. 
-While she was relieved I wasn't in any prison of any sort, she panickly hung up and called my grandmother to talk her down from sending the money. She put up a fight but gave in. 
+While she was relieved I wasn't in a prison of any sort, she fearfully hung up and called my grandmother to talk her down from sending the money. My grandma put up a fight, but relented. 
 She didn't lose the money, but she did lose some of her pride.
 
 She had been scammed. They didn't copy my voice, they didn't have much identifying information... they took a shot in the dark and hit their target.
