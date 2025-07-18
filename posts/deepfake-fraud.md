@@ -24,7 +24,7 @@ In order to protect what's yours (and avoid embarrassing calls from PNC branches
 
 ## Threats
 
-Generative AI allows us to duplicate the efforts of individuals to supercharge output. It also allows attackers to engage in brand new heights of fraud. In today's world, anything digital can be faked.
+Generative AI allows us to duplicate the efforts of individuals to supercharge output. It also allows attackers to engage in brand new heights of fraud. In today's world, anything digital can be faked:
 
 * Video
 * Voice
@@ -48,7 +48,7 @@ Nothing can be trusted at first blush. So what can we do?
 How can you avoid getting fooled by such a huckster impersonating your family, a date, a coworker, or even your boss?
 There are a few quick tricks to feel safer in the modern era, and double check you're interacting with:
 
-* Usesecret words
+* Use secret words
 * Validate your video call companion is real
 * Trust no video
 * Avoid giving too much away
