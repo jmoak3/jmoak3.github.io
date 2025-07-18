@@ -35,6 +35,7 @@ In order to protect what's yours (and avoid embarrassing calls from PNC branches
 
 Generative AI allows us to duplicate the efforts of humanity's smartest to supercharge output. It also allows attackers to engage in brand new heights of fraud. In today's world, anything digital can be faked:
 
+* Images
 * Video
 * Voice
 * Calls
