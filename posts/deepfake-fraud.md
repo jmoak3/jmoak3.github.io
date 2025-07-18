@@ -12,11 +12,11 @@ Her heart sank.
 
 "I'm calling you from a holding cell out west—I need you to wire $20,000 to this account for bail. This is my only call. Do you have a pen?"
 
-Hopefully, this is something no family has to go through, but there was one issue: I wasn't in jail, and I didn't make that call.
+I wasn't in jail, and I didn't make that call.
 
-While I was blissfully up to no good at 22, living in Portland, Oregon, and working for Jaguar Land Rover, I can promise you I was never arrested for marijuana possession. My grandmother, however, with a heart of gold, didn't know any of this and rushed to the nearby PNC branch, fighting with the clerk to send $20,000.
+While I was blissfully up to no good at 22, living in Portland, Oregon and working for Jaguar Land Rover, I can promise you I was never arrested. My grandmother, however, with a heart of gold, rushed to the nearby PNC branch to fight with the clerk to send $20,000.
 
-Thankfully, she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about this newfound hobby and imprisonment. While she was relieved I wasn't in any sort of prison, she fearfully hung up and called my grandmother to talk her down from sending the money. My grandma put up a fight but relented. She didn't lose the money, but she did lose some of her pride.
+Thankfully she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about my newfound hobby and imprisonment. While she was relieved I wasn't in jail, she fearfully hung up and called my grandmother to talk her down from sending the money. My grandma pushed back but relented. She didn't lose the money, but she did lose some of her pride.
 
 She had nearly been scammed. They didn't copy my voice; they didn't have much identifying information... but they took a shot in the dark and hit their target.
 
