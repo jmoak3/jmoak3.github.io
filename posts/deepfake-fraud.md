@@ -49,9 +49,9 @@ Attackers can clone a target's voice via loose recordings or spam calls to fish 
 
 Even [Salesforce has steps to identify and mitigate](https://indeedinc.my.site.com/employerSupport1/s/article/How-to-spot-a-deepfake-during-a-video-interview?language=en_US) such "deepfake" calls
 in interviews now. Famously, there is widespread evidence of [North Koreans impersonating American tech workers](https://www.politico.com/news/2025/05/12/north-korea-remote-workers-us-tech-companies-00340208) to bring money into the Hermit Kingdom.
-If you're not convinced, [$25 million was stolen after a deepfake CEO called and tricked an employee](https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk). This is not only an emergency for grandmothers.
+If you're not convinced, [$25 million was stolen after a deepfake CEO called and tricked an employee](https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk). 
 
-Nothing can be trusted at first blush. So what can we do?
+This is not only an emergency for grandmothers.
 
 ## Enforcing Trust
 
