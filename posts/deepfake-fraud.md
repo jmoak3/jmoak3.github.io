@@ -1,4 +1,8 @@
-It was 2016 and the world was still reeling from Harambe's passing and Brexit. My grandmother was relaxing in her patio home watching the talking heads debate the merits of these developments,
+It was 2016.
+
+The world was still reeling from Harambe's passing and the start of Brexit. 
+
+My grandmother, at home in Louisville, Kentucky was relaxing in her patio home. She was watching pundits debate the merits of these developments
 when her phone began to ring.
 
 Excited, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
