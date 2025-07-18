@@ -1,7 +1,3 @@
-# Placeholder! Real content coming soon.
-
-# The Rise of Generative AI in Business
-
 Generative AI is rapidly transforming the business landscape, offering unprecedented opportunities for innovation, efficiency, and creativity. From automating content creation to designing new products, its applications are vast and growing.
 
 ## What is Generative AI?
