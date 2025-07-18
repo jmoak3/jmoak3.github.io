@@ -95,6 +95,24 @@
             font-weight: 500;
             border-radius: 0.5rem;
         }
+
+        /* Hero section specific styling */
+        .hero-background {
+            /* Updated URL to reference the image directly in the repo */
+            background-image: url('map.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 75vh; /* Ensure it takes up enough vertical space */
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -133,8 +151,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-red-700 to-red-900 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
-        <div class="container mx-auto px-4 text-center">
+    <section id="home" class="hero-background text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
                 <span class="text-white">The Wild Ones</span>
             </h1>
