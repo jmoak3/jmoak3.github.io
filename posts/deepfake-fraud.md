@@ -54,7 +54,7 @@ There are a few quick tricks to feel safer in the modern era, and double check y
 * Avoid giving too much away
 
 My family has the fortune of having a slightly paranoid techie as a member, and since the marijuana-jail incident I've versed them all on the value of a secret word.
-If any of us call, asking for money, for emergency help, or to say we've been kidnapped, we have a secret word we all expect to hear. 
+If any of us call asking for money, for emergency help or to say we've been kidnapped, we have a secret word we all expect to hear. 
 
 For example, if I get a call from my brother that he's in a Guatemalan
 holding cell, while I would be alarmed, unless he screams "Marsupial, marsupial, marsupial!" I would be wary that this may be an elaborate fake targeting me or my family.
