@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Ones - Blog</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate text */
+        }
+        .navbar-link {
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-link:hover {
+            color: #dc2626; /* Red 600 for hover */
+        }
+        .btn-primary {
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #b91c1c; /* Red 700 */
+        }
+        .btn-white-outline-red {
+            background-color: white;
+            color: #dc2626; /* Red 600 */
+            border: 2px solid #dc2626; /* Red 600 border */
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+        .btn-white-outline-red:hover {
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            border-color: #dc2626; /* Red 600 border */
+        }
+        .section-heading {
+            color: #1e293b; /* Darker slate for headings */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        /* Custom scroll-to-top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 20px; /* Place at the right */
+            z-index: 99; /* Ensure it's above other content */
+            background-color: #dc2626; /* Red 600 */
+            color: white;
+            border: none;
+            border-radius: 50%; /* Circular button */
+            width: 48px; /* Size */
+            height: 48px; /* Size */
+            font-size: 1.5rem; /* Icon size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+        #scrollToTopBtn:hover {
+            background-color: #b91c1c; /* Red 700 */
+            opacity: 1;
+        }
+        /* Markdown content styling */
+        .markdown-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        .markdown-content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        .markdown-content h3 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #1e293b;
+        }
+        .markdown-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #334155;
+        }
+        .markdown-content ul, .markdown-content ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .markdown-content ul li {
+            list-style-type: disc;
+            margin-bottom: 0.5rem;
+        }
+        .markdown-content ol li {
+            list-style-type: decimal;
+            margin-bottom: 0.5rem;
+        }
+        .markdown-content a {
+            color: #dc2626;
+            text-decoration: underline;
+        }
+        .markdown-content pre {
+            background-color: #e2e8f0; /* Gray 200 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .markdown-content code {
+            font-family: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+            background-color: #e2e8f0; /* Gray 200 */
+            padding: 0.2em 0.4em;
+            border-radius: 0.25rem;
+        }
+        .markdown-content blockquote {
+            border-left: 4px solid #dc2626;
+            padding-left: 1rem;
+            margin-left: 0;
+            margin-bottom: 1rem;
+            color: #475569;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo - Now an image -->
+            <a href="index.html#home" class="flex-shrink-0">
+                <img src="logo.png" alt="The Wild Ones Logo" class="h-10 w-auto rounded-lg">
+            </a>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-red-600 focus:outline-none focus:text-red-600" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#home" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Home</a>
+                <a href="index.html#services" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Services</a>
+                <a href="index.html#about" class="navbar-link text-gray-600 hover:text-red-600 font-medium">About Us</a>
+                <a href="blog.html" class="navbar-link text-red-600 font-medium">Blog</a>
+                <a href="index.html#contact" class="navbar-link text-gray-600 hover:text-red-600 font-medium">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md mt-2 rounded-lg mx-4">
+            <a href="index.html#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Home</a>
+            <a href="index.html#services" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Services</a>
+            <a href="index.html#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">About Us</a>
+            <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Blog</a>
+            <a href="index.html#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="section-heading text-4xl md:text-5xl font-bold text-center mb-12">Our Blog</h1>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Blog Post List (Sidebar on larger screens) -->
+            <aside class="lg:w-1/4 bg-white p-6 rounded-xl shadow-lg h-fit">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Recent Posts</h2>
+                <ul id="blog-post-list">
+                    <!-- Blog posts will be dynamically loaded here -->
+                </ul>
+            </aside>
+
+            <!-- Blog Post Content Area -->
+            <section class="lg:w-3/4 bg-white p-8 rounded-xl shadow-lg">
+                <div id="blog-post-content" class="markdown-content">
+                    <h2 class="text-2xl font-semibold text-gray-700">Select a post from the left to read.</h2>
+                    <p class="text-gray-600 mt-4">Welcome to The Wild Ones blog! Here you'll find our latest insights on technology trends, business strategies, and how to stay ahead in a rapidly evolving digital landscape.</p>
+                    <p class="text-gray-600 mt-2">We cover topics ranging from AI integration and cybersecurity to cloud computing and digital transformation. Our goal is to provide valuable information that empowers your business to thrive.</p>
+                    <p class="text-gray-600 mt-2">Click on any post title in the "Recent Posts" section to dive deeper into our articles.</p>
+                </div>
+                <div id="loading-indicator" class="hidden text-center text-gray-500 mt-8">Loading post...</div>
+                <div id="error-message" class="hidden text-center text-red-500 mt-8">Error loading post. Please try again.</div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 The Wild Ones. All rights reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">Proudly made with AI.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top" role="button" class="cursor-pointer">↑</button>
+
+    <script>
+        // Smooth scrolling for navigation links (adjusted for blog.html)
+        document.querySelectorAll('a[href^="index.html#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Prevent default behavior only for internal links on this page
+                if (this.hostname === window.location.hostname) {
+                    e.preventDefault();
+                    window.location.href = this.href; // Navigate to index.html and then scroll
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', !isHidden);
+        }
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "flex";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Blog post data
+        const blogPosts = [
+            {
+                id: 'generative-ai',
+                title: 'The Rise of Generative AI in Business',
+                date: 'July 15, 2025',
+                author: 'James Moak',
+                markdownFile: 'posts/generative-ai.md'
+            },
+            {
+                id: 'cybersecurity',
+                title: 'Cybersecurity in a Hybrid Work World',
+                date: 'July 10, 2025',
+                author: 'The Wild Ones Team',
+                markdownFile: 'posts/cybersecurity.md'
+            },
+            {
+                id: 'cloud-computing',
+                title: 'Leveraging Cloud Computing for Scalability',
+                date: 'July 5, 2025',
+                author: 'James Moak',
+                markdownFile: 'posts/cloud-computing.md'
+            }
+        ];
+
+        const blogPostList = document.getElementById('blog-post-list');
+        const blogPostContent = document.getElementById('blog-post-content');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const errorMessage = document.getElementById('error-message');
+
+        /**
+         * Renders the list of blog posts in the sidebar.
+         */
+        function renderBlogList() {
+            blogPostList.innerHTML = ''; // Clear existing list
+            blogPosts.forEach(post => {
+                const listItem = document.createElement('li');
+                listItem.className = 'mb-4';
+                listItem.innerHTML = `
+                    <a href="#${post.id}" class="block p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200" data-post-id="${post.id}">
+                        <h3 class="text-lg font-semibold text-gray-800">${post.title}</h3>
+                        <p class="text-sm text-gray-600">${post.author} &bull; ${post.date}</p>
+                    </a>
+                `;
+                blogPostList.appendChild(listItem);
+            });
+        }
+
+        /**
+         * Fetches and displays a specific blog post.
+         * @param {string} postId - The ID of the blog post to load.
+         */
+        async function loadBlogPost(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+
+            if (!post) {
+                blogPostContent.innerHTML = `<h2 class="text-2xl font-semibold text-red-600">Post not found.</h2>`;
+                errorMessage.classList.remove('hidden');
+                loadingIndicator.classList.add('hidden');
+                return;
+            }
+
+            // Show loading indicator, hide previous content and error
+            blogPostContent.innerHTML = '';
+            blogPostContent.classList.add('hidden'); // Hide content while loading
+            loadingIndicator.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+
+            try {
+                const response = await fetch(post.markdownFile);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const markdown = await response.text();
+
+                // Convert markdown to HTML using marked.js
+                const htmlContent = marked.parse(markdown);
+
+                // Display the post
+                blogPostContent.innerHTML = `
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 section-heading">${post.title}</h1>
+                    <p class="text-gray-600 text-lg mb-6">By ${post.author} | ${post.date}</p>
+                    <div class="markdown-body">${htmlContent}</div>
+                    <button onclick="showBlogList()" class="btn-primary mt-8">← Back to All Posts</button>
+                `;
+                blogPostContent.classList.remove('hidden'); // Show content
+                loadingIndicator.classList.add('hidden');
+            } catch (error) {
+                console.error('Error loading blog post:', error);
+                blogPostContent.innerHTML = `<h2 class="text-2xl font-semibold text-red-600">Failed to load post: ${post.title}</h2><p class="text-gray-700 mt-2">Please check your internet connection or try again later.</p>`;
+                errorMessage.classList.remove('hidden');
+                loadingIndicator.classList.add('hidden');
+                blogPostContent.classList.remove('hidden'); // Show error message
+            }
+        }
+
+        /**
+         * Shows the list of blog posts and hides the individual post content.
+         */
+        function showBlogList() {
+            blogPostContent.innerHTML = `
+                <h2 class="text-2xl font-semibold text-gray-700">Select a post from the left to read.</h2>
+                <p class="text-gray-600 mt-4">Welcome to The Wild Ones blog! Here you'll find our latest insights on technology trends, business strategies, and how to stay ahead in a rapidly evolving digital landscape.</p>
+                <p class="text-gray-600 mt-2">We cover topics ranging from AI integration and cybersecurity to cloud computing and digital transformation. Our goal is to provide valuable information that empowers your business to thrive.</p>
+                <p class="text-gray-600 mt-2">Click on any post title in the "Recent Posts" section to dive deeper into our articles.</p>
+            `;
+            blogPostContent.classList.remove('hidden');
+            loadingIndicator.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            // Remove hash from URL if present
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+        }
+
+        // Event listener for clicking on blog post titles in the list
+        blogPostList.addEventListener('click', function(event) {
+            const targetLink = event.target.closest('a[data-post-id]');
+            if (targetLink) {
+                event.preventDefault();
+                const postId = targetLink.dataset.postId;
+                loadBlogPost(postId);
+                // Update URL hash without causing a full page reload
+                window.location.hash = postId;
+            }
+        });
+
+        // Initial load: Check for a specific post ID in the URL hash
+        window.addEventListener('DOMContentLoaded', () => {
+            renderBlogList(); // Always render the list
+            const postIdFromUrl = window.location.hash.substring(1); // Remove '#'
+            if (postIdFromUrl) {
+                loadBlogPost(postIdFromUrl);
+            } else {
+                showBlogList(); // Show initial welcome message
+            }
+        });
+    </script>
+</body>
+</html>
