@@ -2,17 +2,19 @@ It was 2016.
 
 The world was still reeling from Harambe's passing and the start of Brexit. 
 
-My grandmother, at home in Louisville, Kentucky was relaxing in her patio home. She was watching pundits debate the merits of these developments
+My grandmother, at home in Louisville, Kentucky, was relaxing in her patio home: she was watching pundits debate the merits of these developments
 when her phone began to ring.
 
-Excited, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
-"Still, it may be important." she thought. She answered the phone. 
+Excited, she muted the television and stood up to answer the phone. She didn't recognize the number.
+"Still, it may be important." she thought. She answered it. 
 
 "Grandma? Are you there?" I said. "It's me, James, and I'm in trouble."
 
 Her heart sank.
 
-"I need your help. I was caught with marijuana and I'm calling you from a holding cell out west -
+"I need your help. I was caught with marijuana and arrested."
+
+"I'm calling you from a holding cell out west -
 I need you to wire $20,000 to this account for bail, this is my only call. Do you have a pen?"
 
 While I was blissfully up to no good at 22 living in Portland, Oregon and working for Jaguar Land Rover, I can
