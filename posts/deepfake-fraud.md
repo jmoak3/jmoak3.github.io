@@ -1,4 +1,4 @@
-It was 2016, and the world was still reeling from Harambe's passing and Brexit. My grandmother was relaxing in her patio home watching the talking heads debate the merits of these developments,
+It was 2016 and the world was still reeling from Harambe's passing and Brexit. My grandmother was relaxing in her patio home watching the talking heads debate the merits of these developments,
 when her phone began to ring.
 
 Ever eager for a break in the monotony, she muted the television and stood up to answer the phone. She didn't recognize the number, oddly.
@@ -11,11 +11,11 @@ Her heart sank.
 "I need your help. I was caught with marijuana and I'm calling you from a holding cell out west -
 I need you to wire $20,000 to this account for bail, this is my only call. Do you have a pen?"
 
-I'm sure you can see where this is going. While I was blissfully up to no good at 22 living in Portland, Oregon and working for Jaguar Land Rover, I can
+While I was blissfully up to no good at 22 living in Portland, Oregon and working for Jaguar Land Rover, I can
 promise you I was never arrested for marijuana possession. My grandmother, heart of gold, rushed to the nearby PNC branch and fought with the clerk to send $20,000 before
 she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about this newfound hobby and enprisonment. 
 While she was relieved I wasn't in any prison of any sort, she panickly hung up and called my grandmother to talk her down from sending the money. She put up a fight but gave in. 
-She didn't send the money, but she still swallowed her pride.
+She didn't lose the money, but she did lose some of her pride.
 
 She had been scammed. They didn't copy my voice, they didn't have much identifying information... they took a shot in the dark and hit their target.
 
