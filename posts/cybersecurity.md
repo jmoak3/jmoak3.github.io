@@ -1,4 +1,4 @@
-#Placeholder! Real content coming soon.
+# Placeholder! Real content coming soon.
 
 # Cybersecurity in a Hybrid Work World
 
