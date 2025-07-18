@@ -98,12 +98,13 @@
 
         /* Hero section specific styling */
         .hero-background {
-            /* Updated URL to reference the image directly in the repo */
-            background-image: url('map.png');
+            /* Using a placeholder image for the background for better preview compatibility */
+            background-image: url('https://placehold.co/1200x800/2f3a4b/ffffff?text=Tech+Consultancy');
             background-size: cover;
             background-position: center;
             position: relative;
-            min-height: 75vh; /* Ensure it takes up enough vertical space */
+            /* Changed to arbitrary value for min-height */
+            min-height: 75vh;
         }
         .hero-overlay {
             position: absolute;
@@ -120,12 +121,14 @@
     <!-- Header/Navigation -->
     <header class="bg-white shadow-sm py-4">
         <nav class="container mx-auto px-4 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#home" class="text-2xl font-bold text-red-700 rounded-lg p-2">The Wild Ones</a>
+            <!-- Logo - Now an image -->
+            <a href="#home" class="flex-shrink-0">
+                <img src="http://googleusercontent.com/file_content/1" alt="The Wild Ones Logo" class="h-10 w-auto rounded-lg">
+            </a>
 
             <!-- Mobile Menu Button (Hamburger) -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 hover:text-red-600 focus:outline-none focus:text-red-600">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-red-600 focus:outline-none focus:text-red-600" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
@@ -151,7 +154,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-background text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+    <section id="home" class="hero-background text-white py-20 md:py-32 flex items-center justify-center">
         <div class="hero-overlay"></div>
         <div class="container mx-auto px-4 text-center relative z-10">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
@@ -171,19 +174,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1: Adapting to AI -->
                 <div class="card p-6 text-center">
-                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Adapt" alt="AI Landscape Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Adapt" alt="Icon representing AI integration" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
                     <h3 class="text-xl font-semibold mb-3 text-gray-800">AI Integration Landscape</h3>
                     <p class="text-gray-600">Stay competitive and efficient with Artificial Intelligence.</p>
                 </div>
                 <!-- Service Card 2: Understanding Tech Trends -->
                 <div class="card p-6 text-center">
-                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Grasp" alt="Tech Trends Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Grasp" alt="Icon representing technological trend analysis" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
                     <h3 class="text-xl font-semibold mb-3 text-gray-800">Technological Trend Analysis</h3>
-                    <p class="text-600">Gain insight into emerging technologies.</p>
+                    <p class="text-gray-600">Gain insight into emerging technologies.</p>
                 </div>
                 <!-- Service Card 3: Keeping Pace -->
                 <div class="card p-6 text-center">
-                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Pace" alt="Rapid Change Icon" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
+                    <img src="https://placehold.co/100x100/dc2626/ffffff?text=Pace" alt="Icon representing keeping pace with modern changes" class="mx-auto mb-4 rounded-full placeholder-img" style="background-color: #dc2626; color: white;">
                     <h3 class="text-xl font-semibold mb-3 text-gray-800">Modern Readiness</h3>
                     <p class="text-gray-600">Keep up with a constantly evolving market.</p>
                 </div>
@@ -195,9 +198,8 @@
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <!-- Removed flex justify-center md:justify-start from parent div -->
-                <!-- Image now takes full width of its column, ensuring alignment with text -->
-                <img src="downtown.png" alt="James Moak - The Wild Ones" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                <!-- Replaced local image with a placeholder URL for better preview compatibility -->
+                <img src="https://placehold.co/600x400/2f3a4b/ffffff?text=James+Moak" alt="James Moak, founder of The Wild Ones" class="rounded-xl shadow-lg w-full h-auto object-cover">
             </div>
             <div class="md:w-1/2">
                 <h2 class="section-heading text-3xl md:text-4xl font-bold mb-6">About James Moak & The Wild Ones</h2>
@@ -269,7 +271,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">↑</button>
+    <button id="scrollToTopBtn" title="Go to top" role="button" class="cursor-pointer">↑</button>
 
     <script>
         // Smooth scrolling for navigation links
@@ -287,7 +289,9 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         function toggleMobileMenu() {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            // Update aria-expanded attribute based on visibility
+            mobileMenuButton.setAttribute('aria-expanded', !isHidden);
         }
         mobileMenuButton.addEventListener('click', toggleMobileMenu);
 
@@ -301,7 +305,7 @@
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 scrollToTopBtn.style.display = "flex"; // Use flex to center content
             } else {
-                scrollToTo pBtn.style.display = "none";
+                scrollToTopBtn.style.display = "none";
             }
         }
 
