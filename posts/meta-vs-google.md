@@ -1,6 +1,6 @@
-Coming Soon! A discussion around Meta vs Google AI-powered advertising tools.
+### Coming Soon! A discussion around Meta vs Google AI-powered advertising tools.
 
-Here's a slop version until I get around to it:
+### Here's a slop version based on my writing style until I get around to it:
 
 Small businesses, listen up! Remember those days when you needed a marketing firm or a professional photographer just to get your ads off the ground? All that time, all that money... well, those days are quickly becoming a relic of the past. Why? Because **Meta and Google are throwing AI-powered advertising tools at us like candy at a parade**, and they're specifically designed to help the little guys.
 
