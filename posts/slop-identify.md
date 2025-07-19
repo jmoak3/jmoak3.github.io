@@ -60,7 +60,7 @@ While that may be exciting for teams who want to see their coworkers succeed mor
 
 That said, while many business do construct policies and some opt to ban certain AI tools over slop or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their specific usage of generative AI to their boss. 
 
-Hallucinations are a danger inherent to the tools and will be a part of them for foreseeable future. It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be deployed officially in the workplace - lest workers find them on their own. 
+Hallucinations are a danger inherent to the tools and will be a part of them for foreseeable future. It's important for a workplace and their leadership to be educated on the usage of these tools, and for useful tools to be deployed officially in the workplace - lest workers find them on their own. 
 
 Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing slop](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
