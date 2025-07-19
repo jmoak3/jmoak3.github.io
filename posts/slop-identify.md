@@ -45,7 +45,7 @@ This is not exclusive to language learning - while immensely popular youtube-tut
 Parents should as always be active in their child's education. Sit with them and walk them through their homework and help them query the bot to understand The Why present in the problem they're solving. We just might see the smartest cohort of students to walk this Earth, unlimited by the availability of exacerbated teachers.
 
 ### Work
-According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has already integrated AI. Conversely this means two-thirds of employees say they "Never" use it. How to increase adoption amongst the "Never" and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be its own post.
+According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has taken action to integrate AI, with 44% of white collar workers agreeing with the statement. However, two-thirds of all surveyed employees say they "Never" use it, unchanged from 2023-2024, with 54% white collar workers responding "Never". How to lead an increase in the adoption among the "Never"s and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be its own post.
 
 However, we can discuss some of the high level effects and best practices now. There are two key takeaways I'd like to highlight:
 
