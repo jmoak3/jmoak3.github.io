@@ -29,9 +29,12 @@ There are already compelling studies showing that [using AI tools decreases acti
 
 While many intellectuals posit about ["Zero Trust Homework"](https://stratechery.com/2022/ai-homework/#Zero_Trust_Homework) schemes to design new software systems with accountable generation histories and even purposeful errors, the unfortunate reality is that general access to competent models is here to stay. Thankfully we have a few actionable items to mitigate this:
 
+* There is no reliable way to detect AI
 * Shift focus to in person school work
 * No phones in the classroom
 * AI learning tools
+
+Outside of a possibility that generative models have [a thing for the "em dash"](https://www.washingtonpost.com/technology/2025/04/09/ai-em-dash-writing-punctuation-chatgpt/), there is no reliable way for an educator to discern if content was wholly generated with AI, let alone partially and edited. This may be not what you wanted to hear, but it appears to be the truth. We have to work around it.
 
 A return to in-class essaying or work isn't too hard to grasp, and can effectively fight against the urge to just ask the bot. No phones in classrooms also make it more difficult to ask it for help, as well as the various other benefits that are found in youth who's schools delay the onset-of-first-phone, or active phone usage in class. For more information I highly recommend the book _The Anxious Generation_ by Jonathan Haidt, or his blog: [After Babel](https://www.afterbabel.com/).
 
