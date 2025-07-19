@@ -58,7 +58,7 @@ This goes without saying, but if you can't trust live video, then any prerecorde
 
 The final trick is to stop giving too much of your info away. For some of us, that's simply not possible, but if you have an already low profile and you get a call from an unknown number, simply wait to say "hello." They may be trying to harvest your voice, and as little as a sentence could enable them to build a model to target your grandma or boss. If the caller is legit, they will be eager to start the conversation. If you don't hear anything, hang up and block the number.
 
-### Conclusion
+### In Sum
 
 The world is changing, and we need to change with it.
 
