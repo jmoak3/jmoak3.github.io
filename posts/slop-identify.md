@@ -10,7 +10,7 @@ For tech companies today this is a quandary. How does Meta know if an image on I
 
 AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is colloquially referred to as "Slop", as it can be generated in vast volumes with little care. Since a lot of AI content is perceived as low quality or plain wrong due to "hallucinations" (where a generative AI tool makes things up), "slop" is justifiably used negatively. Will the world of computers turn into an overfilled and abandoned trough?
 
-We're going to discuss some of the latest attempts to determine this, and how to live in a potentially "slop-py" (full of low quality AI content) world. 
+We're going to discuss some of the latest attempts to determine this, and how to live in a potentially "slop-py" world. 
 
 ### Meta
 
