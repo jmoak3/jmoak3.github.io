@@ -51,12 +51,15 @@ However, we can discuss some of the high level effects and best practices now. T
 
 * Below average employees benefit most from generative-AI
 * Most employees lack clear guidance on the usage of AI at work
+* In places with clear bans, employers likely cannot stop employees from using them
 
 According to the poll, 45% of employees say that "Productivity and efficiency" has improved, but when combined with another interesting survey, you see an impressive pattern. [Below average performers are uplifted](https://www.ethicallyalignedai.com/post/below-average-workers-will-benefit-the-most-from-using-ai) by the availability of such tools, according to [study by the Harvard Business School](https://www.hbs.edu/faculty/Pages/item.aspx?num=64700). Below average workers saw a 43% improvement in their output vs a 17% gain for high performing counterparts. That is a huge win.
 
-While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today - ensure your data is protected and educate your workers so that your business is filled with quality over slop. 
+While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today.
+
+That said, while many business do construct policies and some opt to ban certain AI tools over "slop" or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their usage of generative AI to their boss. In fact, sometimes it is the [boss who is fired for secretly outputting "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html). It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be available - lest workers find them on their own.
 
 ### Conclusion
-Across school, the workplace, even the metaverse, AI is changing how we produce and interact. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
+We've meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. AI will certainly impact media consumption, businesses' ability to market themselves in a more crowded environment, and businesses' internal workings. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
 
 It is an exciting time - ask questions, and stay sharp!
