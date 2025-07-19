@@ -22,7 +22,7 @@ It's worth seriously considering what it means if Meta's products cannot discern
 
 This is not an unintelligent approach! If it's not possible for them to discern or filter this content, then the same likely goes for customers. Perhaps customers will find the content engaging on its merits because by definition, it is at human-quality. Say what you will but Meta is chock full of go-getters.
 
-It's worth repeating this point: content created by AI, on the surface, is impossible to discern with certainty as AI or human as the entire point is to mimic human output.
+It's worth repeating this point: content created by AI is extraordinarily difficult to discern with 100% confidence as AI or human. The entire point is to mimic human output after all.
 
 ### School
 While Meta might gleefully welcome the deluge of new high quality content to keep customers engaged, not everybody has the priviledge of leaning in. Schools, as we discussed, are in quite the pickle here.
