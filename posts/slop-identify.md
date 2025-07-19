@@ -6,11 +6,11 @@ Thankfully he had "tested" each paper in this manner twice, so he felt confident
 
 While the ridiculousness of his claims were easy to test and the students were able to prove their work (they got their diplomas) using Google Doc timestamps logged as they wrote their papers, this terrifying anecdote raises important questions about the problems of authenticity in work today and if we have the capability to discern if something was written with AI-assistance or not.
 
-For tech companies today this is a quandary. How does Meta know if an image on Instagram is real or fake? Do they care? How does a teacher know if their students' work was AI? What about a manager reviewing his report's suddenly meandering output? What about a report reading his manager's suddenly correctly-spelt emails?
+For tech companies today this is a quandary. How does Meta know if an image on Instagram is real or fake? Do they care? How does a teacher know if their students' work was AI? What about a manager reviewing his report's suddenly meandering output? What about a report reading his manager's suddenly correctly-spelt emails? Does it even matter, if fake content is better than real content?
 
-AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is colloquially referred to as "Slop", as it can be generated in vast volumes with little care. Since a lot of AI content is perceived as low quality or plain wrong due to "hallucinations" (where a generative AI tool makes things up), "slop" is justifiably used negatively. Will the world of computers turn into an overfilled and abandoned trough?
+First, let's cover "slop". AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is colloquially referred to as "slop", as it can be generated in vast volumes with little care. Since a lot of AI content is perceived as low quality or plain wrong due to "hallucinations" (where a generative AI tool makes things up), "slop" is justifiably used negatively. Will the world of computers turn into an overfilled and abandoned trough?
 
-We're going to discuss some of the latest attempts to determine this, how AI affects different settings, and how to live in a potentially "slop-py" world. 
+We're going to discuss some of the latest attempts to determine authenticity, how the flood of AI generated media affects different settings, and how to live in a potentially "slop-py" world. 
 
 ### Meta
 
@@ -38,9 +38,9 @@ Here are some key points of discussion around AI content in schools:
 * Keep phones out of the classroom
 * AI learning tools are fantastic
 
-Outside of a possibility that generative models have [a thing for the "em dash"](https://www.washingtonpost.com/technology/2025/04/09/ai-em-dash-writing-punctuation-chatgpt/), there is no reliable way for an educator to discern if content was wholly generated with AI, let alone partially and edited. This may be not what you came here to hear, but it appears to be the truth. We have to work around it. We cannot reliably filter between a student's sweat and toil with another student's slop.
+Outside of a possibility that generative models have [a thing for the "em dash"](https://www.washingtonpost.com/technology/2025/04/09/ai-em-dash-writing-punctuation-chatgpt/), there is no reliable way for an educator to discern if content was wholly generated with AI, let alone partially and edited. This may be not what you came here to hear, but it appears to be the truth. We have to work around it. We cannot reliably filter between one student's toil and another student's AI-slop.
 
-A return to in-class essaying or work isn't too hard to grasp, and can effectively fight against the urge to just ask the bot. No phones in classrooms also make it more difficult to ask it for help, as well as the various other benefits that are found in youth whose schools delay the onset-of-first-phone, or active phone usage in class. For more information I highly recommend the book _The Anxious Generation_ by Jonathan Haidt, or his blog: [After Babel](https://www.afterbabel.com/).
+A return to in-class essaying or work can effectively fight against the urge to just ask the bot. No phones in classrooms also make it more difficult to ask it for help, as well as the various other benefits that are found in youth whose schools delay the onset-of-first-phone, or active phone usage in class. For more information I highly recommend the book _The Anxious Generation_ by Jonathan Haidt, or his blog: [After Babel](https://www.afterbabel.com/).
 
 Where education gets interesting is the introduction of AI learning tools. When you're not using them to do your homework, AI tools by some measures are one of the most transformative developments in personalized tutoring. For example, [Duolingo recently introduced 'real life' conversations](https://blog.duolingo.com/video-call/) with an voice-enabled AI to practice your foreign language skills. I've personally used it and it is surreal. Like a real person it will converse with you, repeat words, and correct you. Practice makes perfect and with these tools, practice is more democratized.
 
