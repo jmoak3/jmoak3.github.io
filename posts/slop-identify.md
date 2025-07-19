@@ -1,4 +1,4 @@
-In 2023, Dr. Jared Mumm, a professor at Texas A&M University denied several seniors their diplomas after they had already walked.
+In 2023, Dr. Jared Mumm, a professor at Texas A&M University [denied several seniors their diplomas](https://www.rollingstone.com/culture/culture-features/texas-am-chatgpt-ai-professor-flunks-students-false-claims-1234736601/) after they had already walked.
 
 These students would be receiving an "X" in the course, as the professor asserted they had written papers with "Chat GTP" (the correct name is "ChatGPT", but you can't expect every professor to get this stuff right). Dr. Mumm backed up his claim by showing he had asked "Chat GTP" if these students' work was written by it. Gleefully it claimed the credit (can't say it's not a go-getter). 
 
