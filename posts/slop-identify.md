@@ -60,6 +60,8 @@ While that may be exciting for teams who want to see their coworkers succeed mor
 That said, while many business do construct policies and some opt to ban certain AI tools over "slop" or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their usage of generative AI to their boss. In fact, sometimes it is the [boss who is fired for secretly outputting "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html). It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be available - lest workers find them on their own.
 
 ### Conclusion
-We've meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. AI will certainly impact media consumption, businesses' ability to market themselves in a more crowded environment, and businesses' internal workings. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
+We've now meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. AI will certainly impact media consumption, businesses' ability to market themselves in a more crowded environment, and businesses' internal workings. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
+
+It never hurts to ask for help to navigate this new world - that's what we're here for.
 
 It is an exciting time - ask questions, and stay sharp!
