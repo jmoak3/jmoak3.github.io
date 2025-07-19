@@ -27,7 +27,7 @@ It's worth repeating this point: content created by AI is extraordinarily diffic
 ### School
 While Meta might gleefully welcome the deluge of new high quality content to keep customers engaged, not everybody has the priviledge of leaning in. Schools, as we discussed, are in quite the pickle here.
 
-While many intellectuals posit about ["Zero Trust Homework"](https://stratechery.com/2022/ai-homework/#Zero_Trust_Homework) schemes to design new software systems with accountable generation histories and even purposeful errors, the unfortunate reality is that general access to competent models is here to stay.
+Also while many intellectuals posit about ["Zero Trust Homework"](https://stratechery.com/2022/ai-homework/#Zero_Trust_Homework) schemes to design new software systems with accountable generation histories and even purposeful errors, the unfortunate reality is that general access to competent models is here to stay.
 
 To encourage students to write their essays with AI defeats the purpose of practicing their authorship and writing ability. It robs them of their own unique voice and robs them of their learning. There are already compelling studies showing that [using AI tools decreases activity throughout the brain](https://time.com/7295195/ai-chatgpt-google-learning-school/), so just saying "go nuts" is not the answer. Tech companies such as Google are also eager to capture more traffic and happily advertise the benefits of using generative AI inside of search results that may be related to homework (parents should become aware of this). We must act now to plan to protect the education of our youth.
 
