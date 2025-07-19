@@ -65,7 +65,7 @@ That said, while many business do construct policies and some opt to ban certain
 Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
 ### Conclusion
-We've now meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. AI will certainly impact media consumption, businesses' ability to market themselves in a more crowded environment, and businesses' internal workings. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
+We've now meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. A tool as powerful as AI can be leveraged to multiply output massively - will your output be quality, or will it be slop?
 
 It never hurts to ask for help to navigate these tools and how to effectively deploy them - that's what we're here for.
 
