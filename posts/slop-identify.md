@@ -67,6 +67,8 @@ Hallucinations are a danger inherent to the tools and will be a part of them for
 To prevent these fiascos from happening you need to make sure your bot can't naively affect large parts of your business. It is possible to engineer guard rails. When using it in your communication or output, be extra wary to review its work as if it were written by an over-eager junior employee. There are many studies on the pacifying effects of AI systems generating over-reliance and [reducing critical thinking](https://slejournal.springeropen.com/articles/10.1186/s40561-024-00316-7) which can lead to more errors. It will require a new kind of awareness working with such a "partner" to steer their firehoses well in the new marketplace.
 
 ### In Sum
-If we can't tell authenticity on social media, we can't do so in the classroom. If we can't stop students from using AI when they have access to the internet, we can't stop employees from doing so on the job. It's here to stay. 
+If we can't tell authenticity on social media, we can't do so in the classroom. If we can't stop students from using AI when they have access to the internet, we can't stop employees from doing so on the job. 
+
+The challenge isn't "should we use AI?", and it isn't "how do we detect AI in our organization?". It's here to stay - the challenge is how to adapt.
 
 A workplace and its leadership must be educated on the usage of these tools, and the right ones must be deployed officially in the workplace - lest workers find them on their own. A tool as powerful as AI can be leveraged to multiply output massively, and neither employers nor teachers will be able to tell if work was generated with assistance - will your organization's output be quality, or will it be slop?
