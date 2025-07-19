@@ -62,6 +62,8 @@ That said, while many business do construct policies and some opt to ban certain
 
 Hallucinations are a danger inherent to the tools and will be a part of them for foreseeable future. It's important for a workplace and their leadership to be educated on the usage of these tools, and for useful tools to be deployed officially in the workplace - lest workers find them on their own. 
 
+Before you automate functions of your business, ensure you aren't connecting customers to a slop faucet as Air Canada did when [they replaced customer chat with a bot making promises they couldn't keep - and were held liable.](https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know)
+
 Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing slop](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
 ### Conclusion
