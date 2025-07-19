@@ -47,18 +47,14 @@ Parents should as always be active in their child's education. Sit with them and
 ### Workplace
 According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has already integrated AI. However, two-thirds of employees say they "Never" use it. How to increase adoption amongst the "Never" and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be it's own post.
 
-However, we can discuss some of the high level effects and best practices now. There are three key takeaways I'd like to highlight:
+However, we can discuss some of the high level effects and best practices now. There are two key takeaways I'd like to highlight:
 
 * Below average employees benefit most from generative-AI
-* Those using it do not have clear guidance on the usage of AI at work
-* People are worried
+* Most employees lack clear guidance on the usage of AI at work
 
 According to the poll, 45% of employees say that "Productivity and efficiency" has improved, but when combined with another interesting survey, you see an impressive pattern. [Below average performers are uplifted](https://www.ethicallyalignedai.com/post/below-average-workers-will-benefit-the-most-from-using-ai) by the availability of such tools, according to [study by the Harvard Business School](https://www.hbs.edu/faculty/Pages/item.aspx?num=64700). Below average workers saw a 43% improvement in their output vs a 17% gain for high performing counterparts. That is a huge win.
 
-While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today.
-
-The final note is that people are worried AI will replace them or take their jobs. According to [a Pew poll](https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/) 52% of workers are worried. As we enter this strange new phase of the industrial world it's important to have empathy for the people who got us here. There is no guarantee that this will bring us to paradise, nor is it set in stone that a handful of people will take it and hide it under their mattress for their own gain. Throughout history technological advancements came with disruption and with undeniable benefits: famously, the creation of spreadsheet software has lead to more people working on spreadsheets than ever before. 
-
+While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today - the risks are large, and the benefits great.
 
 ### Conclusion
 Across school, the workplace, even the metaverse, AI is changing how we produce and interact. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
