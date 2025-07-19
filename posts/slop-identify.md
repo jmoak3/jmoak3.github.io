@@ -64,13 +64,9 @@ That said, while many business do construct policies and some opt to ban certain
 
 Hallucinations are a danger inherent to the tools and will be a part of them for foreseeable future. Before you automate functions of your business, ensure you aren't connecting customers to a slop faucet as Air Canada did when [they replaced customer chat with a bot making promises they couldn't keep - and were held liable.](https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know) Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing slop](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
-It's important for a workplace and its leadership to be educated on the usage of these tools, and for useful tools to be deployed officially in the workplace - lest workers find them on their own. The faucet has been turned on for every business. Do you have the expertise to ensure yours isn't filled with slop?
+To prevent these fiascos from happening you need to make sure your bot can't indepedently affect large parts of your business. When using it in your communication or output, be extra wary to review its work as if it were written by an over-eager junior employee. There are many studies on the pacifying effects of AI systems generating over-reliance and [reducing critical thinking](https://slejournal.springeropen.com/articles/10.1186/s40561-024-00316-7) which can lead to more errors. It will require a new kind of awareness working with such a "partner" to steer their firehoses well in the new marketplace.
 
 ### Conclusion
-We've now meandered through trying to detect and live with AI in school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. If we can't tell authenticity on social media, we can't do so in the classroom. If we can't stop students from using AI when they have access to the internet, we can't stop employees from doing so on the job. It's here to stay, and it's time to adapt to changes, grasp the direction, and keep pace with the world.
+If we can't tell authenticity on social media, we can't do so in the classroom. If we can't stop students from using AI when they have access to the internet, we can't stop employees from doing so on the job. It's here to stay. It's important for a workplace and its leadership to be educated on the usage of these tools, and for the right ones to be deployed officially in the workplace - lest workers find them on their own. 
 
 A tool as powerful as AI can be leveraged to multiply output massively, and neither employers nor teachers will be able to tell if work was generated with assistance - will your organization's output be quality, or will it be slop?
-
-It never hurts to ask for help to navigate these tools and how to effectively deploy them - that's what we're here for.
-
-It is an exciting time - ask questions, and stay sharp!
