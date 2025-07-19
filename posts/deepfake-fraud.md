@@ -14,7 +14,7 @@ Her heart sank.
 
 I wasn't in jail, and I didn't make that call.
 
-While I was blissfully up to no good at 22, living in Portland, Oregon and working for Jaguar Land Rover, I can promise you I was never arrested. My grandmother, however, with a heart of gold, rushed to the nearby PNC branch to fight with the clerk to send $20,000.
+While I was blissfully up to no good at 22 working in Portland, Oregon, I can promise you I was never arrested. My grandmother, however, with a heart of gold, rushed to the nearby PNC branch to fight with the clerk to send $20,000.
 
 Thankfully she decided to share this information with my mother. My mother, surprised, as marijuana was legal in Oregon, called me to ask about my newfound hobby and imprisonment. While she was relieved I wasn't in jail, she fearfully hung up and called my grandmother to talk her down from sending the money. My grandma pushed back but relented. She didn't lose the money, but she did lose some of her pride.
 
