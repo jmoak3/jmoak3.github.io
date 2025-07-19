@@ -36,7 +36,7 @@ While many intellectuals posit about ["Zero Trust Homework"](https://stratechery
 
 Outside of a possibility that generative models have [a thing for the "em dash"](https://www.washingtonpost.com/technology/2025/04/09/ai-em-dash-writing-punctuation-chatgpt/), there is no reliable way for an educator to discern if content was wholly generated with AI, let alone partially and edited. This may be not what you wanted to hear, but it appears to be the truth. We have to work around it.
 
-A return to in-class essaying or work isn't too hard to grasp, and can effectively fight against the urge to just ask the bot. No phones in classrooms also make it more difficult to ask it for help, as well as the various other benefits that are found in youth who's schools delay the onset-of-first-phone, or active phone usage in class. For more information I highly recommend the book _The Anxious Generation_ by Jonathan Haidt, or his blog: [After Babel](https://www.afterbabel.com/).
+A return to in-class essaying or work isn't too hard to grasp, and can effectively fight against the urge to just ask the bot. No phones in classrooms also make it more difficult to ask it for help, as well as the various other benefits that are found in youth whose schools delay the onset-of-first-phone, or active phone usage in class. For more information I highly recommend the book _The Anxious Generation_ by Jonathan Haidt, or his blog: [After Babel](https://www.afterbabel.com/).
 
 Where education gets interesting is the introduction of AI learning tools. AI tools by some measures are one of the most beneficially transformative developments in personalized tutoring. For example, [Duolingo recently introduced 'real life' conversations](https://blog.duolingo.com/video-call/) with an voice-enabled AI to practice your foreign language skills. I've personally used it and it is surreal. Like a real person it will converse with you, repeat words, and correct you. Practice makes perfect and with these tools, practice is more democratized.
 
@@ -45,7 +45,7 @@ This is not exclusive to language learning - while immensely popular youtube-tut
 Parents should as always be active in their child's education. Sit with them and walk them through their homework and help them query the bot to understand The Why present in the problem they're solving. We just might see the smartest cohort of students to walk this Earth, unlimited by the availability of exacerbated teachers.
 
 ### Work
-According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has already integrated AI. Conversely this means two-thirds of employees say they "Never" use it. How to increase adoption amongst the "Never" and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be it's own post.
+According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has already integrated AI. Conversely this means two-thirds of employees say they "Never" use it. How to increase adoption amongst the "Never" and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be its own post.
 
 However, we can discuss some of the high level effects and best practices now. There are two key takeaways I'd like to highlight:
 
