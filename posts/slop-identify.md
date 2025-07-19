@@ -47,17 +47,22 @@ Parents should as always be active in their child's education. Sit with them and
 ### Work
 According to [this Gallup poll](https://www.gallup.com/workplace/651203/workplace-answering-big-questions.aspx), 33% of employees say their workplace has taken action to integrate AI, with 44% of white collar workers agreeing with the statement. However, two-thirds of all surveyed employees say they "Never" use it, unchanged from 2023-2024, with 54% white collar workers responding "Never". How to lead an increase in the adoption among the "Never"s and how to ensure quality persists among the "Constantly" (not a real response in the survey) crowd could be its own post.
 
-However, we can discuss some of the high level effects and best practices now. There are two key takeaways I'd like to highlight:
+However, we can discuss some of the high level effects and best practices now. There are a few key takeaways I'd like to highlight:
 
 * Below average employees benefit most from generative-AI
 * Most employees lack clear guidance on the usage of AI at work
 * In places with clear bans, employers likely cannot stop employees from using them
+* Businesses will overly trust AI
 
 According to the poll, 45% of employees say that "Productivity and efficiency" has improved, but when combined with another interesting survey, you see an impressive pattern. [Below average performers are uplifted](https://www.ethicallyalignedai.com/post/below-average-workers-will-benefit-the-most-from-using-ai) by the availability of such tools, according to [study by the Harvard Business School](https://www.hbs.edu/faculty/Pages/item.aspx?num=64700). Below average workers saw a 43% improvement in their output vs a 17% gain for high performing counterparts. That is a huge win.
 
 While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today.
 
-That said, while many business do construct policies and some opt to ban certain AI tools over "slop" or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their usage of generative AI to their boss. In fact, sometimes it is the [boss who is fired for secretly outputting "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html). It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be available - lest workers find them on their own.
+That said, while many business do construct policies and some opt to ban certain AI tools over "slop" or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their usage of generative AI to their boss. 
+
+"Hallucinations" (where a generative AI tool makes things up) are a danger inherent to the tools and will be a part of them for foreseeable future. It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be available - lest workers find them on their own. 
+
+In fact, sometimes it is the [boss who is fired for secretly putting too much faith in AI, and producing "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
 ### Conclusion
 We've now meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. AI will certainly impact media consumption, businesses' ability to market themselves in a more crowded environment, and businesses' internal workings. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
