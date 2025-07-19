@@ -10,7 +10,7 @@ For tech companies today this is a quandary. How does Meta know if an image on I
 
 AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is referred to as "Slop". Will the world of media turn into a trough?
 
-We're going to discuss some of the latest attempts to determine this by 3rd parties as well as by OpenAI (the creators of ChatGPT), and how to live in a "slop-py" (full of AI) world. 
+We're going to discuss some of the latest attempts to determine this, and how to live in a "slop-py" (full of AI) world. 
 
 ### Meta
 
