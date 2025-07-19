@@ -4,7 +4,7 @@ These students would be receiving an "X" in the course, as the professor asserte
 
 Thankfully he had "tested" each paper in this manner twice, so he felt confident in putting these students' futures on the line. Just a small snag, however... as his dissertation on pig farming written several years before the introduction of "Chat GTP" also appears to be written by it, at least according to it. It also took credit for wholly drafting the same email that Dr. Mumm had sent to the students letting them know they had been "caught".
 
-While the ridiculousness of his claims were easy to test, and the students were able to prove their work using Google Doc timestamps logged as they wrote their papers, this terrifying anecdote raises important questions about the problems of authenticity in work today and if we have the capability to discern if something was written with AI-assistance or not.
+While the ridiculousness of his claims were easy to test and the students were able to prove their work (they got their diplomas) using Google Doc timestamps logged as they wrote their papers, this terrifying anecdote raises important questions about the problems of authenticity in work today and if we have the capability to discern if something was written with AI-assistance or not.
 
 For tech companies today this is a quandary. How does Meta know if an image on Instagram is real or fake? Do they care? How does a teacher know if their students' work was AI? What about a manager reviewing his report's suddenly meandering output? What about a report reading his manager's suddenly correctly-spelt emails?
 
