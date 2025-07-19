@@ -12,7 +12,7 @@ Her heart sank.
 
 "I'm calling you from a holding cell out west—I need you to wire $20,000 to this account for bail. This is my only call. Do you have a pen?"
 
-My grandmother with a heart of gold, rushed to the nearby PNC branch to send $20,000.
+My grandmother with a heart of gold rushed to the nearby PNC branch to send $20,000.
 
 However, I wasn't in jail, and I didn't make that call. While I was blissfully up to no good at 22 working in Portland, Oregon, as far as I can remember I was also never arrested. 
 
