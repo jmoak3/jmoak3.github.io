@@ -1,4 +1,4 @@
-### Written by AI based on my writing style! I'll make a handmade craftsman blog post version soon. 
+### I let Google's Gemini AI tool handle this post. Who better to introduce AI features than AI?
 
 Small businesses, listen up! Remember those days when you needed a marketing firm or a professional photographer just to get your ads off the ground? All that time, all that money... well, those days are quickly becoming a relic of the past. Why? Because **Meta and Google are throwing AI-powered advertising tools at us like candy at a parade**, and they're specifically designed to help the little guys.
 
