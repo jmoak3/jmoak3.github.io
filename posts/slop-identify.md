@@ -8,7 +8,7 @@ While the ridiculousness of his claims were easy to test, and the students were 
 
 For tech companies today this is a quandary. How does Meta know if an image on Instagram is real or fake? Do they care? How does a teacher know if their students' work was AI? What about a manager reviewing his report's suddenly meandering output? What about a report reading his manager's suddenly correctly-spelt emails?
 
-AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is referred to as "Slop". Will the world of media turn into a trough?
+AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is referred to as "Slop". Will the world of computers turn into an overfilled and abandoned trough?
 
 We're going to discuss some of the latest attempts to determine this, and how to live in a "slop-py" (full of AI) world. 
 
@@ -54,7 +54,7 @@ However, we can discuss some of the high level effects and best practices now. T
 
 According to the poll, 45% of employees say that "Productivity and efficiency" has improved, but when combined with another interesting survey, you see an impressive pattern. [Below average performers are uplifted](https://www.ethicallyalignedai.com/post/below-average-workers-will-benefit-the-most-from-using-ai) by the availability of such tools, according to [study by the Harvard Business School](https://www.hbs.edu/faculty/Pages/item.aspx?num=64700). Below average workers saw a 43% improvement in their output vs a 17% gain for high performing counterparts. That is a huge win.
 
-While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today - the risks are large, and the benefits great.
+While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does NOT have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today - ensure your data is protected and educate your workers so that your business is filled with quality over slop. 
 
 ### Conclusion
 Across school, the workplace, even the metaverse, AI is changing how we produce and interact. While there may be a deluge of "slop" in some places, others are using it to refine their minds to be sharper than ever before.
