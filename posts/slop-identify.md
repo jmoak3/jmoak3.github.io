@@ -10,7 +10,7 @@ For tech companies today this is a quandary. How does Meta know if an image on I
 
 AI content can be pushed out in volumes of epic proportions in the same way that a spam email can be sent to millions of people. Such content is colloquially referred to as "Slop", as it can be generated in vast volumes with little care. Since a lot of AI content is perceived as low quality or plain wrong due to "hallucinations" (where a generative AI tool makes things up), "slop" is justifiably used negatively. Will the world of computers turn into an overfilled and abandoned trough?
 
-We're going to discuss some of the latest attempts to determine this, and how to live in a "slop-py" (full of AI) world. 
+We're going to discuss some of the latest attempts to determine this, and how to live in a potentially "slop-py" (full of low quality AI content) world. 
 
 ### Meta
 
@@ -58,11 +58,11 @@ According to the poll, 45% of employees say that "Productivity and efficiency" h
 
 While that may be exciting for teams who want to see their coworkers succeed more, workers today do not have clear guidance on the usage of AI. According to the referenced Gallup poll, 70% of all workers say their employer does not have an AI policy. This could lead to confusion, the leakage of proprietary information, or even possibly plagiarism if the output is not vetted. This must be a priority for any business today.
 
-That said, while many business do construct policies and some opt to ban certain AI tools over "slop" or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their specific usage of generative AI to their boss. 
+That said, while many business do construct policies and some opt to ban certain AI tools over slop or data security concerns, many [employees ignore these rules](https://www.welcometothejungle.com/en/articles/using-ai-secretly-at-work). Among employees who use AI at work, a staggering [68% of respondents in a fishbowl survey](https://blogs.blackberry.com/en/2025/02/blackberry-milestone-road-ahead) say they don't disclose their specific usage of generative AI to their boss. 
 
 Hallucinations are a danger inherent to the tools and will be a part of them for foreseeable future. It's important for a workplace and their leadership to be educated on the usage of these tools, and for the right tools to be deployed officially in the workplace - lest workers find them on their own. 
 
-Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing "slop"](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
+Remember, sometimes it is the [boss who is fired for secretly using AI, and naively producing slop](https://www.cnn.com/2023/12/11/media/sports-illustrated-ai-articles-ceo/index.html).
 
 ### Conclusion
 We've now meandered through school, the workplace, the metaverse, and even pondered some of the long term effects on human intelligence. A tool as powerful as AI can be leveraged to multiply output massively - will your output be quality, or will it be slop?
