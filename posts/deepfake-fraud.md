@@ -12,7 +12,7 @@ Her heart sank.
 
 My grandmother with a heart of gold rushed to the nearby PNC branch to send $20,000.
 
-However, I wasn't in jail, and I didn't make that call. While I was blissfully up to no good at 22 working in Portland, Oregon, as far as I can remember I was also never arrested. 
+However, I wasn't in jail, and I didn't make that call. While I was blissfully up to no good at 22 working in Portland, Oregon, as far as I can remember I was never arrested. 
 
 Thankfully she decided to share this information with my mother, who called to ask about my newfound hobby and imprisonment. While she was relieved I wasn't in jail, she fearfully hung up and called my grandmother to talk her down from sending the money. My grandma pushed back but relented. She didn't lose the money, but she did lose some of her pride.
 
