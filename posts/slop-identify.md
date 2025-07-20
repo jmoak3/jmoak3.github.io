@@ -1,6 +1,6 @@
 In 2023, Dr. Jared Mumm, a professor at Texas A&M University [denied several seniors their diplomas](https://www.rollingstone.com/culture/culture-features/texas-am-chatgpt-ai-professor-flunks-students-false-claims-1234736601/) after they had already walked.
 
-These students would be receiving an "X" in the course, as the professor asserted they had written papers with "Chat GTP" (the correct name is "ChatGPT"...). Dr. Mumm backed up his claim by showing he had asked "Chat GTP" if these students' work was written by it. Gleefully it claimed the credit (can't say it's not a go-getter). 
+These students would be receiving an "X" in the course, as the professor asserted they had written papers with "Chat GTP" (the correct name is "ChatGPT"). Dr. Mumm backed up his claim by showing he had asked "Chat GTP" if these students' work was written by it. Gleefully it claimed the credit (can't say it's not a go-getter). 
 
 Thankfully he had "tested" each paper in this manner twice, so he felt confident in putting these students' futures on the line. Just a small snag, however... as his dissertation on pig farming written several years before the introduction of "Chat GTP" also appears to be written by it, at least according to it. It also took credit for wholly drafting the same email that Dr. Mumm had sent to the students letting them know they had been "caught".
 
