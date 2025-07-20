@@ -1,4 +1,4 @@
-It was 2016 and my grandmother at home in Louisville, Kentucky, was relaxing in her patio home, watching tv when her phone began to ring.
+It was 2016 and my grandmother was relaxing in her patio home, watching tv when her phone began to ring.
 
 Excited, she muted the television and stood up to answer the phone. She didn't recognize the number. "Still, it may be important," she thought. She answered it.
 
