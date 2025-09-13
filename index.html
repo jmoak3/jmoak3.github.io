@@ -10,13 +10,24 @@
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            display: flex;
+            /* Removed overflow: hidden to allow scrolling */
+        }
+        #drone-container {
+            position: fixed; /* Keeps drones in view while scrolling */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Places this container behind the main content */
+            pointer-events: none; /* Allows clicks to pass through to the content below */
+            overflow: hidden;
+        }
+        .container {
+            display: flex; /* Added for centering */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 2rem;
-        }
-        .container {
             width: 100%;
             max-width: 800px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -25,6 +36,9 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             padding: 2.5rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative; /* Keep for z-index context */
+            z-index: 1; /* Ensure content is above drones */
+            margin: auto; /* Center the container */
         }
         .header-title {
             background: linear-gradient(90deg, #6366f1, #a855f7);
@@ -75,8 +89,8 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         .top-performer .bar {
-            animation: 
-                passive-pulse 4s linear infinite, 
+            animation:
+                passive-pulse 4s linear infinite,
                 pulse-size 2.5s ease-in-out infinite;
             box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
         }
@@ -120,114 +134,149 @@
             from { opacity: 0; transform: translateX(-20px); }
             to { opacity: 1; transform: translateX(0); }
         }
+
+        /* Drone specific styles */
+        .drone {
+            position: absolute;
+            left: -100px; /* Start off-screen */
+            width: 50px;
+            height: auto;
+            opacity: 0.7;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        /* New varied flight path animations */
+        @keyframes fly-weave-1 {
+            0% { transform: translateX(0) translateY(0px); }
+            25% { transform: translateX(25vw) translateY(-40px); }
+            50% { transform: translateX(50vw) translateY(20px); }
+            75% { transform: translateX(75vw) translateY(-10px); }
+            100% { transform: translateX(calc(100vw + 100px)) translateY(0px); }
+        }
+
+        @keyframes fly-weave-2 {
+            0% { transform: translateX(0) translateY(0px); }
+            30% { transform: translateX(30vw) translateY(50px); }
+            60% { transform: translateX(60vw) translateY(-30px); }
+            100% { transform: translateX(calc(100vw + 100px)) translateY(10px); }
+        }
+
+        @keyframes fly-weave-3 {
+            0% { transform: translateX(0) translateY(0px); }
+            50% { transform: translateX(50vw) translateY(-60px); }
+            100% { transform: translateX(calc(100vw + 100px)) translateY(30px); }
+        }
     </style>
 </head>
 <body>
+    <div id="drone-container"></div>
     <div class="container">
-        <div class="text-center mb-10">
-            <h1 class="text-5xl font-extrabold header-title pb-2">Run Club Rankings</h1>
-            <p class="text-gray-500 mt-3">Check out this week's awards and leaderboard! 🏆</p>
-        </div>
+        <div> <div class="text-center mb-10">
+                <h1 class="text-5xl font-extrabold header-title pb-2">Run Club Rankings</h1>
+                <p class="text-gray-500 mt-3">Check out this week's awards and leaderboard! 🏆</p>
+            </div>
 
-        <div class="mb-12">
+            <div class="mb-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800">Weekly Awards</h2>
+                    <div class="w-24 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">💯🤝👑</p>
+                        <h3 class="font-bold text-lg text-gray-800">Da Realest</h3>
+                        <p class="text-gray-600">Conner</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🥃🥴🤢</p>
+                        <h3 class="font-bold text-lg text-gray-800">Drank Me Under the Table</h3>
+                        <p class="text-gray-600">OG Juan</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🎨🎸🧗‍♂️</p>
+                        <h3 class="font-bold text-lg text-gray-800">Most Hobbies</h3>
+                        <p class="text-gray-600">Abner</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">👠🕶️🔥</p>
+                        <h3 class="font-bold text-lg text-gray-800">Best Fashion</h3>
+                        <p class="text-gray-600">Kierstin</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">😂🗣️🎤</p>
+                        <h3 class="font-bold text-lg text-gray-800">Archbishop of Banterbury</h3>
+                        <p class="text-gray-600">Vic</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">✈️🗺️🌏</p>
+                        <h3 class="font-bold text-lg text-gray-800">Farthest Away</h3>
+                        <p class="text-gray-600">Lexi</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🇩🇪➡️🇬🇧</p>
+                        <h3 class="font-bold text-lg text-gray-800">Most Germanic Words Anglicized</h3>
+                        <p class="text-gray-600">Ellie</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🤖💡💻</p>
+                        <h3 class="font-bold text-lg text-gray-800">Best Use of AI</h3>
+                        <p class="text-gray-600">Will</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🏃‍♂️💨⚡️</p>
+                        <h3 class="font-bold text-lg text-gray-800">Fastest Runner</h3>
+                        <p class="text-gray-600">Tyrell</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🧼✨🛁</p>
+                        <h3 class="font-bold text-lg text-gray-800">Most Provable Showers</h3>
+                        <p class="text-gray-600">JD</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">☢️💪🛡️</p>
+                        <h3 class="font-bold text-lg text-gray-800">Best to Survive Atomic With</h3>
+                        <p class="text-gray-600">Sam</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🏠🔑💰</p>
+                        <h3 class="font-bold text-lg text-gray-800">Most Houses Sold</h3>
+                        <p class="text-gray-600">Lance</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">🧠🚀🎉</p>
+                        <h3 class="font-bold text-lg text-gray-800">Best New Friend Group Innovation</h3>
+                        <p class="text-gray-600">Matt</p>
+                    </div>
+                    <div class="award-card">
+                        <p class="text-3xl mb-2">💎👂✨</p>
+                        <h3 class="font-bold text-lg text-gray-800">Coolest Earrings</h3>
+                        <p class="text-gray-600">Kyle</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Weekly Awards</h2>
-                <div class="w-24 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-gray-800">Live Rankings <br> Random, I could never</h2>
+                <div class="w-48 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="award-card">
-                    <p class="text-3xl mb-2">💯🤝👑</p>
-                    <h3 class="font-bold text-lg text-gray-800">Da Realest</h3>
-                    <p class="text-gray-600">Conner</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🥃🥴🤢</p>
-                    <h3 class="font-bold text-lg text-gray-800">Drank Me Under the Table</h3>
-                    <p class="text-gray-600">OG Juan</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🎨🎸🧗‍♂️</p>
-                    <h3 class="font-bold text-lg text-gray-800">Most Hobbies</h3>
-                    <p class="text-gray-600">Abner</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">👠🕶️🔥</p>
-                    <h3 class="font-bold text-lg text-gray-800">Best Fashion</h3>
-                    <p class="text-gray-600">Kierstin</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">😂🗣️🎤</p>
-                    <h3 class="font-bold text-lg text-gray-800">Archbishop of Banterbury</h3>
-                    <p class="text-gray-600">Vic</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">✈️🗺️🌏</p>
-                    <h3 class="font-bold text-lg text-gray-800">Farthest Away</h3>
-                    <p class="text-gray-600">Lexi</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🇩🇪➡️🇬🇧</p>
-                    <h3 class="font-bold text-lg text-gray-800">Most Germanic Words Anglicized</h3>
-                    <p class="text-gray-600">Ellie</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🤖💡💻</p>
-                    <h3 class="font-bold text-lg text-gray-800">Best Use of AI</h3>
-                    <p class="text-gray-600">Will</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🏃‍♂️💨⚡️</p>
-                    <h3 class="font-bold text-lg text-gray-800">Fastest Runner</h3>
-                    <p class="text-gray-600">Tyrell</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🧼✨🛁</p>
-                    <h3 class="font-bold text-lg text-gray-800">Most Provable Showers</h3>
-                    <p class="text-gray-600">JD</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">☢️💪🛡️</p>
-                    <h3 class="font-bold text-lg text-gray-800">Best to Survive Atomic With</h3>
-                    <p class="text-gray-600">Sam</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">🏠🔑💰</p>
-                    <h3 class="font-bold text-lg text-gray-800">Most Houses Sold</h3>
-                    <p class="text-gray-600">Lance</p>
-                </div>
-                 <div class="award-card">
-                    <p class="text-3xl mb-2">🧠🚀🎉</p>
-                    <h3 class="font-bold text-lg text-gray-800">Best New Friend Group Innovation</h3>
-                    <p class="text-gray-600">Matt</p>
-                </div>
-                <div class="award-card">
-                    <p class="text-3xl mb-2">💎👂✨</p>
-                    <h3 class="font-bold text-lg text-gray-800">Coolest Earrings</h3>
-                    <p class="text-gray-600">Kyle</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-800">Live Rankings <br> Random, I could never</h2>
-            <div class="w-48 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
-        </div>
-        <div id="chart" class="w-full">
+            <div id="chart" class="w-full">
             </div>
 
-        <div class="flex justify-center items-center gap-4 mt-12">
-            <button id="refresh-btn" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
-                </svg>
-                Refresh Rankings
-            </button>
-             <a href="https://open.spotify.com/playlist/0NkwlN6FHXlcjgnohNjmst?si=3604d1067a3c45eb" target="_blank" id="music-btn" class="btn bg-green-500 hover:bg-green-600 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                </svg>
-                Playlist
-            </a>
+            <div class="flex justify-center items-center gap-4 mt-12">
+                <button id="refresh-btn" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                    </svg>
+                    Refresh Rankings
+                </button>
+                <a href="https://open.spotify.com/playlist/0NkwlN6FHXlcjgnohNjmst?si=3604d1067a3c45eb" target="_blank" id="music-btn" class="btn bg-green-500 hover:bg-green-600 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                    Playlist
+                </a>
+            </div>
         </div>
     </div>
 
@@ -235,6 +284,7 @@
         const friends = ['Conner', 'Sam', 'Matt', 'Lance', 'Lexi', 'Abner', 'OG Juan', 'Vic', 'Ellie', 'JD', 'Brandon 1', 'Brandon 2', 'Juan', 'Tyrell', 'Kyle', 'Frazier', 'Kierstin', 'Will', 'Madelyn', 'Juan'];
         const chartElement = document.getElementById('chart');
         const refreshBtn = document.getElementById('refresh-btn');
+        const droneContainer = document.getElementById('drone-container');
 
         function generateRandomRankings() {
             const rankings = friends.map(name => ({
@@ -266,6 +316,32 @@
         function updateChart() {
             const rankings = generateRandomRankings();
             renderChart(rankings);
+        }
+
+        // Drone generation
+        function createDrone() {
+            const drone = document.createElement('img');
+            drone.src = 'drone.png';
+            drone.classList.add('drone');
+
+            const startY = Math.random() * (window.innerHeight - 50);
+            drone.style.top = `${startY}px`;
+
+            // Randomize animation properties
+            const animationTypes = ['fly-weave-1', 'fly-weave-2', 'fly-weave-3'];
+            const randomAnimation = animationTypes[Math.floor(Math.random() * animationTypes.length)];
+            const animationDuration = Math.random() * 8 + 12; // 12-20 seconds
+            const animationDelay = Math.random() * -animationDuration;
+
+            drone.style.animationName = randomAnimation;
+            drone.style.animationDuration = `${animationDuration}s`;
+            drone.style.animationDelay = `${animationDelay}s`;
+
+            droneContainer.appendChild(drone);
+        }
+
+        for (let i = 0; i < 15; i++) {
+            createDrone();
         }
 
         updateChart();
