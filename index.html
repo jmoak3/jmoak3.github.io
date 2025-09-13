@@ -46,9 +46,8 @@
         }
         .bar {
             height: 100%;
-            /* Use a larger background gradient */
             background: linear-gradient(90deg, #a78bfa, #8b5cf6, #a78bfa, #8b5cf6);
-            background-size: 200% 100%; /* Make the gradient twice as wide */
+            background-size: 200% 100%;
             border-radius: 0.5rem;
             transition: width 0.5s ease-in-out;
             position: relative;
@@ -56,7 +55,6 @@
             align-items: center;
             justify-content: flex-end;
             padding-right: 0.5rem;
-            /* Add the animation */
             animation: slideGradient 3s linear infinite;
         }
         .score {
@@ -74,10 +72,10 @@
         }
         @keyframes slideGradient {
             0% {
-                background-position: 100% 0; /* Start at the end of the gradient */
+                background-position: 0% 0;
             }
             100% {
-                background-position: 0% 0; /* Move to the beginning of the gradient */
+                background-position: -200% 0;
             }
         }
     </style>
