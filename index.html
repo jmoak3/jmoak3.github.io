@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 1rem;
+            padding: 2rem;
         }
         .container {
             width: 100%;
@@ -57,7 +57,6 @@
         }
         .bar {
             height: 100%;
-            /* Updated gradient for seamless looping and set a larger background size */
             background: linear-gradient(90deg, #a78bfa, #8b5cf6, #a78bfa);
             background-size: 200% 100%;
             border-radius: 0.5rem;
@@ -67,7 +66,6 @@
             align-items: center;
             justify-content: flex-end;
             padding-right: 0.75rem;
-            /* Added passive pulse animation to ALL bars */
             animation: passive-pulse 4s linear infinite;
         }
         .score {
@@ -76,9 +74,7 @@
             color: white;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
-        /* Dynamic class for the top performer */
         .top-performer .bar {
-            /* The top performer gets an additional, more prominent pulse animation */
             animation: 
                 passive-pulse 4s linear infinite, 
                 pulse-size 2.5s ease-in-out infinite;
@@ -98,30 +94,31 @@
             transform: translateY(-2px);
             box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
         }
+        .award-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
 
-        /* NEW: Keyframes for the passive color shimmer on all bars */
         @keyframes passive-pulse {
             from { background-position: 0% 0; }
             to { background-position: -200% 0; }
         }
-
-        /* Renamed animation for the top performer's size pulse */
         @keyframes pulse-size {
             0% { transform: scaleX(1); }
             50% { transform: scaleX(1.01); }
             100% { transform: scaleX(1); }
         }
-
-        /* Fade-in animation for bars */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
     </style>
 </head>
@@ -135,7 +132,82 @@
         <div id="chart" class="w-full">
             </div>
 
-        <div class="flex justify-center items-center gap-4 mt-10">
+        <div class="mt-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Weekly Awards</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="award-card">
+                    <p class="text-3xl mb-2">💯🤝👑</p>
+                    <h3 class="font-bold text-lg text-gray-800">Da Realest</h3>
+                    <p class="text-gray-600">Conner</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🥃🥴🤢</p>
+                    <h3 class="font-bold text-lg text-gray-800">Drank Me Under the Table</h3>
+                    <p class="text-gray-600">OG Juan</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🎨🎸🧗‍♂️</p>
+                    <h3 class="font-bold text-lg text-gray-800">Most Hobbies</h3>
+                    <p class="text-gray-600">Abner</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">👠🕶️🔥</p>
+                    <h3 class="font-bold text-lg text-gray-800">Best Fashion</h3>
+                    <p class="text-gray-600">Kierstin</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">😂🗣️🎤</p>
+                    <h3 class="font-bold text-lg text-gray-800">Archbishop of Banterbury</h3>
+                    <p class="text-gray-600">Vic</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">✈️🗺️🌏</p>
+                    <h3 class="font-bold text-lg text-gray-800">Farthest Away</h3>
+                    <p class="text-gray-600">Lexi</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🇩🇪➡️🇬🇧</p>
+                    <h3 class="font-bold text-lg text-gray-800">Most Germanic Words Anglicized</h3>
+                    <p class="text-gray-600">Ellie</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🤖💡💻</p>
+                    <h3 class="font-bold text-lg text-gray-800">Best Use of AI</h3>
+                    <p class="text-gray-600">Will</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🏃‍♂️💨⚡️</p>
+                    <h3 class="font-bold text-lg text-gray-800">Fastest Runner</h3>
+                    <p class="text-gray-600">Tyrell</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🧼✨🛁</p>
+                    <h3 class="font-bold text-lg text-gray-800">Most Provable Showers</h3>
+                    <p class="text-gray-600">JD</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">☢️💪🛡️</p>
+                    <h3 class="font-bold text-lg text-gray-800">Best to Survive Atomic With</h3>
+                    <p class="text-gray-600">Sam</p>
+                </div>
+                <div class="award-card">
+                    <p class="text-3xl mb-2">🏠🔑💰</p>
+                    <h3 class="font-bold text-lg text-gray-800">Most Houses Sold</h3>
+                    <p class="text-gray-600">Lance</p>
+                </div>
+                 <div class="award-card">
+                    <p class="text-3xl mb-2">🧠🚀🎉</p>
+                    <h3 class="font-bold text-lg text-gray-800">Best New Friend Group Innovation</h3>
+                    <p class="text-gray-600">Matt</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center items-center gap-4 mt-12">
             <button id="refresh-btn" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
@@ -152,30 +224,24 @@
     </div>
 
     <script>
-        const friends = ['Conner', 'Sam', 'Matt', 'Lance', 'Lexi', 'Abner', 'OG Juan', 'Vic', 'Ellie', 'JD', 'Brandon 1', 'Brandon 2', 'Juan', 'Tyrell', 'Kyle', 'Frazier', 'Kierstin', 'Will', 'Kylyn'];
+        const friends = ['Conner', 'Sam', 'Matt', 'Lance', 'Lexi', 'Abner', 'OG Juan', 'Vic', 'Ellie', 'JD', 'Brandon 1', 'Brandon 2', 'Juan', 'Tyrell', 'Kyle', 'Frazier', 'Kierstin', 'Will'];
         const chartElement = document.getElementById('chart');
         const refreshBtn = document.getElementById('refresh-btn');
 
         function generateRandomRankings() {
             const rankings = friends.map(name => ({
                 name,
-                // Conner gets 95, others get a random score from 5 to 94.
-                // Math.random() * 90 gives 0-89.99..., add 5 to get 5-94.99..., floor it.
                 score: name === 'Conner' ? 95 : Math.floor(Math.random() * 90) + 5
             }));
-
-            // Sort by score in descending order
             rankings.sort((a, b) => b.score - a.score);
             return rankings;
         }
 
         function renderChart(data) {
             const maxScore = data[0]?.score || 100;
-
             chartElement.innerHTML = data.map((item, index) => {
                 const isTopPerformer = index === 0;
                 const barWidth = (item.score / maxScore) * 100;
-
                 return `
                     <div class="bar-container ${isTopPerformer ? 'top-performer' : ''}" style="animation-delay: ${index * 50}ms;">
                         <div class="name">${item.name}</div>
@@ -194,10 +260,7 @@
             renderChart(rankings);
         }
 
-        // Initial render
         updateChart();
-
-        // Add event listener for the refresh button
         refreshBtn.addEventListener('click', updateChart);
     </script>
 </body>
