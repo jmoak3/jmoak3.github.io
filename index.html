@@ -150,11 +150,6 @@
                 bar.className = 'bar';
                 bar.style.width = `${barWidth}%`;
                 
-                // Add a special class for Conner to give his bar a pulsing effect
-                if (item.name === 'Conner') {
-                    bar.classList.add('pulse-animation');
-                }
-                
                 const scoreElement = document.createElement('span');
                 scoreElement.className = 'score';
                 scoreElement.textContent = item.score;
