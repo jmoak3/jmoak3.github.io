@@ -105,11 +105,28 @@
         const refreshBtn = document.getElementById('refresh-btn');
 
         function generateRandomRankings() {
-            const rankings = friends.map(name => ({
-                name,
-                score: Math.floor(Math.random() * 100) + 1
-            }));
+            // Create an array to hold the rankings
+            const rankings = [];
+
+            // Set Conner's score to 95 and add him to the rankings
+            rankings.push({
+                name: 'Conner',
+                score: 95
+            });
+
+            // Generate random scores for all other friends
+            friends.forEach(name => {
+                if (name !== 'Conner') {
+                    rankings.push({
+                        name,
+                        score: Math.floor(Math.random() * 94) + 1 // Scores will be 1-94 to keep Conner on top
+                    });
+                }
+            });
+
+            // Sort the entire list of rankings
             rankings.sort((a, b) => b.score - a.score);
+
             return rankings;
         }
 
@@ -132,6 +149,11 @@
                 const barWidth = (item.score / maxScore) * 100;
                 bar.className = 'bar';
                 bar.style.width = `${barWidth}%`;
+                
+                // Add a special class for Conner to give his bar a pulsing effect
+                if (item.name === 'Conner') {
+                    bar.classList.add('pulse-animation');
+                }
                 
                 const scoreElement = document.createElement('span');
                 scoreElement.className = 'score';
