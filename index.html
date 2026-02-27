@@ -3,355 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend Rankings</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cumberland Dynamics | Autonomous Tactical Systems</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        :root {
+            --bg-dark: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            /* Removed overflow: hidden to allow scrolling */
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
         }
-        #drone-container {
-            position: fixed; /* Keeps drones in view while scrolling */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2; /* Places this container behind the main content */
-            pointer-events: none; /* Allows clicks to pass through to the content below */
-            overflow: hidden;
-        }
-        .container {
-            display: flex; /* Added for centering */
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 2rem;
-            width: 100%;
-            max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border-radius: 1.5rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            padding: 2.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            position: relative; /* Keep for z-index context */
-            z-index: 1; /* Ensure content is above drones */
-            margin: auto; /* Center the container */
-        }
-        .header-title {
-            background: linear-gradient(90deg, #6366f1, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bar-container {
+
+        header {
+            padding: 2rem 5%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.25rem;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out forwards;
+            border-bottom: 1px solid #334155;
         }
-        .name {
+
+        .logo {
+            font-size: 1.5rem;
             font-weight: 700;
-            width: 90px;
-            text-align: right;
-            margin-right: 1.5rem;
-            color: #4b5563;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
-        .bar-wrapper {
-            flex-grow: 1;
-            height: 32px;
-            background-color: #e5e7eb;
-            border-radius: 0.5rem;
-            overflow: hidden;
+
+        .logo span {
+            color: var(--accent);
         }
-        .bar {
-            height: 100%;
-            background: linear-gradient(90deg, #a78bfa, #8b5cf6, #a78bfa);
-            background-size: 200% 100%;
-            border-radius: 0.5rem;
-            transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 0.75rem;
-            animation: passive-pulse 4s linear infinite;
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
-        .score {
-            font-weight: 700;
-            font-size: 0.875rem;
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+        nav a:hover {
+            color: var(--accent);
         }
-        .top-performer .bar {
-            animation:
-                passive-pulse 4s linear infinite,
-                pulse-size 2.5s ease-in-out infinite;
-            box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: bold;
-            padding: 0.75rem 1.5rem;
-            border-radius: 9999px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-        }
-        .award-card {
-            background-color: white;
-            border-radius: 1rem;
-            padding: 1.5rem;
+
+        .hero {
+            padding: 8rem 5%;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        .award-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        @keyframes passive-pulse {
-            from { background-position: 0% 0; }
-            to { background-position: -200% 0; }
-        }
-        @keyframes pulse-size {
-            0% { transform: scaleX(1); }
-            50% { transform: scaleX(1.01); }
-            100% { transform: scaleX(1); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
         }
 
-        /* Drone specific styles */
-        .drone {
-            position: absolute;
-            left: -100px; /* Start off-screen */
-            width: 50px;
-            height: auto;
-            opacity: 0.7;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* New varied flight path animations */
-        @keyframes fly-weave-1 {
-            0% { transform: translateX(0) translateY(0px); }
-            25% { transform: translateX(25vw) translateY(-40px); }
-            50% { transform: translateX(50vw) translateY(20px); }
-            75% { transform: translateX(75vw) translateY(-10px); }
-            100% { transform: translateX(calc(100vw + 100px)) translateY(0px); }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-dark);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
 
-        @keyframes fly-weave-2 {
-            0% { transform: translateX(0) translateY(0px); }
-            30% { transform: translateX(30vw) translateY(50px); }
-            60% { transform: translateX(60vw) translateY(-30px); }
-            100% { transform: translateX(calc(100vw + 100px)) translateY(10px); }
+        .btn:hover {
+            background-color: #0ea5e9;
         }
 
-        @keyframes fly-weave-3 {
-            0% { transform: translateX(0) translateY(0px); }
-            50% { transform: translateX(50vw) translateY(-60px); }
-            100% { transform: translateX(calc(100vw + 100px)) translateY(30px); }
+        .capabilities {
+            padding: 5rem 5%;
+            background-color: #0b1120;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            nav {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="drone-container"></div>
-    <div class="container">
-        <div> <div class="text-center mb-10">
-                <h1 class="text-5xl font-extrabold header-title pb-2">Run Club Rankings</h1>
-                <p class="text-gray-500 mt-3">Check out this week's awards and leaderboard! 🏆</p>
-            </div>
 
-            <div class="mb-12">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800">Weekly Awards</h2>
-                    <div class="w-24 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">💯🤝👑</p>
-                        <h3 class="font-bold text-lg text-gray-800">Da Realest</h3>
-                        <p class="text-gray-600">Conner</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🥃🥴🤢</p>
-                        <h3 class="font-bold text-lg text-gray-800">Drank Me Under the Table</h3>
-                        <p class="text-gray-600">OG Juan</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🎨🎸🧗‍♂️</p>
-                        <h3 class="font-bold text-lg text-gray-800">Most Hobbies</h3>
-                        <p class="text-gray-600">Abner</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">👠🕶️🔥</p>
-                        <h3 class="font-bold text-lg text-gray-800">Best Fashion</h3>
-                        <p class="text-gray-600">Kierstin</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">😂🗣️🎤</p>
-                        <h3 class="font-bold text-lg text-gray-800">Archbishop of Banterbury</h3>
-                        <p class="text-gray-600">Vic</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">✈️🗺️🌏</p>
-                        <h3 class="font-bold text-lg text-gray-800">Farthest Away</h3>
-                        <p class="text-gray-600">Lexi</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🇩🇪➡️🇬🇧</p>
-                        <h3 class="font-bold text-lg text-gray-800">Most Germanic Words Anglicized</h3>
-                        <p class="text-gray-600">Ellie</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🤖💡💻</p>
-                        <h3 class="font-bold text-lg text-gray-800">Best Use of AI</h3>
-                        <p class="text-gray-600">Will</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🏃‍♂️💨⚡️</p>
-                        <h3 class="font-bold text-lg text-gray-800">Fastest Runner</h3>
-                        <p class="text-gray-600">Tyrell</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🧼✨🛁</p>
-                        <h3 class="font-bold text-lg text-gray-800">Most Provable Showers</h3>
-                        <p class="text-gray-600">JD</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">☢️💪🛡️</p>
-                        <h3 class="font-bold text-lg text-gray-800">Best to Survive Atomic With</h3>
-                        <p class="text-gray-600">Sam</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🏠🔑💰</p>
-                        <h3 class="font-bold text-lg text-gray-800">Most Houses Sold</h3>
-                        <p class="text-gray-600">Lance</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">🧠🚀🎉</p>
-                        <h3 class="font-bold text-lg text-gray-800">Best New Friend Group Innovation</h3>
-                        <p class="text-gray-600">Matt</p>
-                    </div>
-                    <div class="award-card">
-                        <p class="text-3xl mb-2">💎👂✨</p>
-                        <h3 class="font-bold text-lg text-gray-800">Coolest Earrings</h3>
-                        <p class="text-gray-600">Kyle</p>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div class="logo">Cumberland <span>Dynamics</span></div>
+        <nav>
+            <a href="#capabilities">Capabilities</a>
+            <a href="mailto:contact@cumberlanddynamics.com">Contact</a>
+        </nav>
+    </header>
 
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Live Rankings <br> Random, I could never</h2>
-                <div class="w-48 h-1 bg-indigo-500 mx-auto mt-2 rounded-full"></div>
-            </div>
-            <div id="chart" class="w-full">
-            </div>
+    <section class="hero">
+        <h1>Autonomous Advantage at the Tactical Edge</h1>
+        <p>Forged in the Bluegrass. We are an agile aerospace startup developing secure, NDAA-compliant unmanned systems driven by advanced local compute and edge AI.</p>
+        <a href="mailto:contact@cumberlanddynamics.com" class="btn">Connect with Us</a>
+    </section>
 
-            <div class="flex justify-center items-center gap-4 mt-12">
-                <button id="refresh-btn" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
-                    </svg>
-                    Refresh Rankings
-                </button>
-                <a href="https://open.spotify.com/playlist/0NkwlN6FHXlcjgnohNjmst?si=3604d1067a3c45eb" target="_blank" id="music-btn-1" class="btn bg-green-500 hover:bg-green-600 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                    </svg>
-                    Playlist 1
-                </a>
-                <a href="https://open.spotify.com/playlist/1L8C88KlrBnwwuxHSgWGYV?si=050d7eb3931749ee" target="_blank" id="music-btn-2" class="btn bg-green-500 hover:bg-green-600 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                    </svg>
-                    Playlist 2
-                </a>
+    <section id="capabilities" class="capabilities">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Edge AI Integration</h3>
+                <p>Harnessing embedded high-performance compute to execute complex computer vision, object detection, and autonomous decision-making locally, without relying on vulnerable external networks.</p>
+            </div>
+            <div class="card">
+                <h3>Agile Prototyping</h3>
+                <p>Channelling the pioneering spirit of the Kentucky frontier into rapid engineering. We iterate quickly on versatile, field-ready airframes designed to integrate advanced sensor suites like LIDAR and dual optical systems.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Supply Chain</h3>
+                <p>Strict adherence to NDAA procurement standards. As an emerging U.S. manufacturer, our systems are built from the ground up with a meticulously vetted supply chain to support Blue UAS certification roadmaps.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script>
-        const friends = ['Conner', 'Sam', 'Matt', 'Lance', 'Lexi', 'Abner', 'OG Juan', 'Vic', 'Ellie', 'JD', 'Brandon 1', 'Brandon 2', 'Juan', 'Tyrell', 'Kyle', 'Frazier', 'Kierstin', 'Will', 'Madelyn', 'Juan', 'Dr James'];
-        const chartElement = document.getElementById('chart');
-        const refreshBtn = document.getElementById('refresh-btn');
-        const droneContainer = document.getElementById('drone-container');
+    <footer>
+        <p>&copy; 2026 Cumberland Dynamics, LLC. Proudly grown and operated in Kentucky.</p>
+    </footer>
 
-        function generateRandomRankings() {
-            const rankings = friends.map(name => ({
-                name,
-                score: name === 'Conner' ? 95 : Math.floor(Math.random() * 90) + 5
-            }));
-            rankings.sort((a, b) => b.score - a.score);
-            return rankings;
-        }
-
-        function renderChart(data) {
-            const maxScore = data[0]?.score || 100;
-            chartElement.innerHTML = data.map((item, index) => {
-                const isTopPerformer = index === 0;
-                const barWidth = (item.score / maxScore) * 100;
-                return `
-                    <div class="bar-container ${isTopPerformer ? 'top-performer' : ''}" style="animation-delay: ${index * 50}ms;">
-                        <div class="name">${item.name}</div>
-                        <div class="bar-wrapper">
-                            <div class="bar" style="width: ${barWidth}%;">
-                                <span class="score">${item.score}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        function updateChart() {
-            const rankings = generateRandomRankings();
-            renderChart(rankings);
-        }
-
-        // Drone generation
-        function createDrone() {
-            const drone = document.createElement('img');
-            drone.src = 'drone.png';
-            drone.classList.add('drone');
-
-            const startY = Math.random() * (window.innerHeight - 50);
-            drone.style.top = `${startY}px`;
-
-            // Randomize animation properties
-            const animationTypes = ['fly-weave-1', 'fly-weave-2', 'fly-weave-3'];
-            const randomAnimation = animationTypes[Math.floor(Math.random() * animationTypes.length)];
-            const animationDuration = Math.random() * 8 + 12; // 12-20 seconds
-            const animationDelay = Math.random() * -animationDuration;
-
-            drone.style.animationName = randomAnimation;
-            drone.style.animationDuration = `${animationDuration}s`;
-            drone.style.animationDelay = `${animationDelay}s`;
-
-            droneContainer.appendChild(drone);
-        }
-
-        for (let i = 0; i < 15; i++) {
-            createDrone();
-        }
-
-        updateChart();
-        refreshBtn.addEventListener('click', updateChart);
-    </script>
 </body>
 </html>
